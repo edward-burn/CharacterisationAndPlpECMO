@@ -7,7 +7,7 @@ A rapid network study on Extracorporeal membrane oxygenation (ECMO) to inform it
 - Study type: **Clinical Application**
 - Study lead: **Edward Burn (edward.burn@ndorms.ox.ac.uk)**
 - Study lead forums tag: 
-- Study start date: **March 13, 2020)**
+- Study start date: **March 13, 2020**
 - Study end date: 
 - Protocol: 
 - Publications: 
