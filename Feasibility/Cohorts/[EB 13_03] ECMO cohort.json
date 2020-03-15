@@ -1,0 +1,611 @@
+{
+  "ConceptSets": [
+    {
+      "id": 0,
+      "name": "[EB] ECMO concept set",
+      "expression": {
+        "items": [
+          {
+            "concept": {
+              "CONCEPT_ID": 46257441,
+              "CONCEPT_NAME": "Arterial exposure with creation of graft conduit (eg, chimney graft) to facilitate arterial perfusion for ECMO/ECLS (List separately in addition to code for primary procedure)",
+              "STANDARD_CONCEPT": "S",
+              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "INVALID_REASON": "V",
+              "INVALID_REASON_CAPTION": "Valid",
+              "CONCEPT_CODE": "33987",
+              "DOMAIN_ID": "Procedure",
+              "VOCABULARY_ID": "CPT4",
+              "CONCEPT_CLASS_ID": "CPT4"
+            }
+          },
+          {
+            "concept": {
+              "CONCEPT_ID": 37206602,
+              "CONCEPT_NAME": "Arteriovenous extracorporeal membrane oxygenation",
+              "STANDARD_CONCEPT": "S",
+              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "INVALID_REASON": "V",
+              "INVALID_REASON_CAPTION": "Valid",
+              "CONCEPT_CODE": "786452006",
+              "DOMAIN_ID": "Procedure",
+              "VOCABULARY_ID": "SNOMED",
+              "CONCEPT_CLASS_ID": "Procedure"
+            }
+          },
+          {
+            "concept": {
+              "CONCEPT_ID": 46257586,
+              "CONCEPT_NAME": "Extracorporeal Membrane Oxygenation or Extracorporeal Life Support Services and Procedures",
+              "STANDARD_CONCEPT": "C",
+              "STANDARD_CONCEPT_CAPTION": "Classification",
+              "INVALID_REASON": "V",
+              "INVALID_REASON_CAPTION": "Valid",
+              "CONCEPT_CODE": "1021846",
+              "DOMAIN_ID": "Procedure",
+              "VOCABULARY_ID": "CPT4",
+              "CONCEPT_CLASS_ID": "CPT4 Hierarchy"
+            }
+          },
+          {
+            "concept": {
+              "CONCEPT_ID": 4052536,
+              "CONCEPT_NAME": "Extracorporeal membrane oxygenation",
+              "STANDARD_CONCEPT": "S",
+              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "INVALID_REASON": "V",
+              "INVALID_REASON_CAPTION": "Valid",
+              "CONCEPT_CODE": "233573008",
+              "DOMAIN_ID": "Procedure",
+              "VOCABULARY_ID": "SNOMED",
+              "CONCEPT_CLASS_ID": "Procedure"
+            }
+          },
+          {
+            "concept": {
+              "CONCEPT_ID": 40379806,
+              "CONCEPT_NAME": "Extracorporeal membrane oxygenation",
+              "STANDARD_CONCEPT_CAPTION": "Unknown",
+              "INVALID_REASON": "U",
+              "INVALID_REASON_CAPTION": "Invalid",
+              "CONCEPT_CODE": "180904009",
+              "DOMAIN_ID": "Procedure",
+              "VOCABULARY_ID": "SNOMED",
+              "CONCEPT_CLASS_ID": "Procedure"
+            }
+          },
+          {
+            "concept": {
+              "CONCEPT_ID": 44515635,
+              "CONCEPT_NAME": "Extracorporeal membrane oxygenation",
+              "STANDARD_CONCEPT_CAPTION": "Unknown",
+              "INVALID_REASON": "V",
+              "INVALID_REASON_CAPTION": "Valid",
+              "CONCEPT_CODE": "X58.1",
+              "DOMAIN_ID": "Procedure",
+              "VOCABULARY_ID": "OPCS4",
+              "CONCEPT_CLASS_ID": "Procedure"
+            }
+          },
+          {
+            "concept": {
+              "CONCEPT_ID": 46257585,
+              "CONCEPT_NAME": "Extracorporeal membrane oxygenation (ECMO)/extracorporeal life support (ECLS) provided by physician",
+              "STANDARD_CONCEPT": "C",
+              "STANDARD_CONCEPT_CAPTION": "Classification",
+              "INVALID_REASON": "V",
+              "INVALID_REASON_CAPTION": "Valid",
+              "CONCEPT_CODE": "1022227",
+              "DOMAIN_ID": "Procedure",
+              "VOCABULARY_ID": "CPT4",
+              "CONCEPT_CLASS_ID": "CPT4 Hierarchy"
+            }
+          },
+          {
+            "concept": {
+              "CONCEPT_ID": 46257511,
+              "CONCEPT_NAME": "Extracorporeal membrane oxygenation (ECMO)/extracorporeal life support (ECLS) provided by physician; daily management, each day, veno-arterial",
+              "STANDARD_CONCEPT": "S",
+              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "INVALID_REASON": "V",
+              "INVALID_REASON_CAPTION": "Valid",
+              "CONCEPT_CODE": "33949",
+              "DOMAIN_ID": "Procedure",
+              "VOCABULARY_ID": "CPT4",
+              "CONCEPT_CLASS_ID": "CPT4"
+            }
+          },
+          {
+            "concept": {
+              "CONCEPT_ID": 46257510,
+              "CONCEPT_NAME": "Extracorporeal membrane oxygenation (ECMO)/extracorporeal life support (ECLS) provided by physician; daily management, each day, veno-venous",
+              "STANDARD_CONCEPT": "S",
+              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "INVALID_REASON": "V",
+              "INVALID_REASON_CAPTION": "Valid",
+              "CONCEPT_CODE": "33948",
+              "DOMAIN_ID": "Procedure",
+              "VOCABULARY_ID": "CPT4",
+              "CONCEPT_CLASS_ID": "CPT4"
+            }
+          },
+          {
+            "concept": {
+              "CONCEPT_ID": 46257682,
+              "CONCEPT_NAME": "Extracorporeal membrane oxygenation (ECMO)/extracorporeal life support (ECLS) provided by physician; initiation, veno-arterial",
+              "STANDARD_CONCEPT": "S",
+              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "INVALID_REASON": "V",
+              "INVALID_REASON_CAPTION": "Valid",
+              "CONCEPT_CODE": "33947",
+              "DOMAIN_ID": "Procedure",
+              "VOCABULARY_ID": "CPT4",
+              "CONCEPT_CLASS_ID": "CPT4"
+            }
+          },
+          {
+            "concept": {
+              "CONCEPT_ID": 46257543,
+              "CONCEPT_NAME": "Extracorporeal membrane oxygenation (ECMO)/extracorporeal life support (ECLS) provided by physician; initiation, veno-venous",
+              "STANDARD_CONCEPT": "S",
+              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "INVALID_REASON": "V",
+              "INVALID_REASON_CAPTION": "Valid",
+              "CONCEPT_CODE": "33946",
+              "DOMAIN_ID": "Procedure",
+              "VOCABULARY_ID": "CPT4",
+              "CONCEPT_CLASS_ID": "CPT4"
+            }
+          },
+          {
+            "concept": {
+              "CONCEPT_ID": 46257398,
+              "CONCEPT_NAME": "Extracorporeal membrane oxygenation (ECMO)/extracorporeal life support (ECLS) provided by physician; insertion of central cannula(e) by sternotomy or thoracotomy, 6 years and older",
+              "STANDARD_CONCEPT": "S",
+              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "INVALID_REASON": "V",
+              "INVALID_REASON_CAPTION": "Valid",
+              "CONCEPT_CODE": "33956",
+              "DOMAIN_ID": "Procedure",
+              "VOCABULARY_ID": "CPT4",
+              "CONCEPT_CLASS_ID": "CPT4"
+            }
+          },
+          {
+            "concept": {
+              "CONCEPT_ID": 46257438,
+              "CONCEPT_NAME": "Extracorporeal membrane oxygenation (ECMO)/extracorporeal life support (ECLS) provided by physician; insertion of peripheral (arterial and/or venous) cannula(e), open, 6 years and older",
+              "STANDARD_CONCEPT": "S",
+              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "INVALID_REASON": "V",
+              "INVALID_REASON_CAPTION": "Valid",
+              "CONCEPT_CODE": "33954",
+              "DOMAIN_ID": "Procedure",
+              "VOCABULARY_ID": "CPT4",
+              "CONCEPT_CLASS_ID": "CPT4"
+            }
+          },
+          {
+            "concept": {
+              "CONCEPT_ID": 46257466,
+              "CONCEPT_NAME": "Extracorporeal membrane oxygenation (ECMO)/extracorporeal life support (ECLS) provided by physician; insertion of peripheral (arterial and/or venous) cannula(e), percutaneous, 6 years and older (includes fluoroscopic guidance, when performed)",
+              "STANDARD_CONCEPT": "S",
+              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "INVALID_REASON": "V",
+              "INVALID_REASON_CAPTION": "Valid",
+              "CONCEPT_CODE": "33952",
+              "DOMAIN_ID": "Procedure",
+              "VOCABULARY_ID": "CPT4",
+              "CONCEPT_CLASS_ID": "CPT4"
+            }
+          },
+          {
+            "concept": {
+              "CONCEPT_ID": 46257680,
+              "CONCEPT_NAME": "Extracorporeal membrane oxygenation (ECMO)/extracorporeal life support (ECLS) provided by physician; removal of central cannula(e) by sternotomy or thoracotomy, 6 years and older",
+              "STANDARD_CONCEPT": "S",
+              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "INVALID_REASON": "V",
+              "INVALID_REASON_CAPTION": "Valid",
+              "CONCEPT_CODE": "33986",
+              "DOMAIN_ID": "Procedure",
+              "VOCABULARY_ID": "CPT4",
+              "CONCEPT_CLASS_ID": "CPT4"
+            }
+          },
+          {
+            "concept": {
+              "CONCEPT_ID": 46257399,
+              "CONCEPT_NAME": "Extracorporeal membrane oxygenation (ECMO)/extracorporeal life support (ECLS) provided by physician; removal of peripheral (arterial and/or venous) cannula(e), open, 6 years and older",
+              "STANDARD_CONCEPT": "S",
+              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "INVALID_REASON": "V",
+              "INVALID_REASON_CAPTION": "Valid",
+              "CONCEPT_CODE": "33984",
+              "DOMAIN_ID": "Procedure",
+              "VOCABULARY_ID": "CPT4",
+              "CONCEPT_CLASS_ID": "CPT4"
+            }
+          },
+          {
+            "concept": {
+              "CONCEPT_ID": 46257468,
+              "CONCEPT_NAME": "Extracorporeal membrane oxygenation (ECMO)/extracorporeal life support (ECLS) provided by physician; removal of peripheral (arterial and/or venous) cannula(e), percutaneous, 6 years and older",
+              "STANDARD_CONCEPT": "S",
+              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "INVALID_REASON": "V",
+              "INVALID_REASON_CAPTION": "Valid",
+              "CONCEPT_CODE": "33966",
+              "DOMAIN_ID": "Procedure",
+              "VOCABULARY_ID": "CPT4",
+              "CONCEPT_CLASS_ID": "CPT4"
+            }
+          },
+          {
+            "concept": {
+              "CONCEPT_ID": 46257440,
+              "CONCEPT_NAME": "Extracorporeal membrane oxygenation (ECMO)/extracorporeal life support (ECLS) provided by physician; reposition central cannula(e) by sternotomy or thoracotomy, 6 years and older (includes fluoroscopic guidance, when performed)",
+              "STANDARD_CONCEPT": "S",
+              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "INVALID_REASON": "V",
+              "INVALID_REASON_CAPTION": "Valid",
+              "CONCEPT_CODE": "33964",
+              "DOMAIN_ID": "Procedure",
+              "VOCABULARY_ID": "CPT4",
+              "CONCEPT_CLASS_ID": "CPT4"
+            }
+          },
+          {
+            "concept": {
+              "CONCEPT_ID": 46257684,
+              "CONCEPT_NAME": "Extracorporeal membrane oxygenation (ECMO)/extracorporeal life support (ECLS) provided by physician; reposition peripheral (arterial and/or venous) cannula(e), open, 6 years and older (includes fluoroscopic guidance, when performed)",
+              "STANDARD_CONCEPT": "S",
+              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "INVALID_REASON": "V",
+              "INVALID_REASON_CAPTION": "Valid",
+              "CONCEPT_CODE": "33962",
+              "DOMAIN_ID": "Procedure",
+              "VOCABULARY_ID": "CPT4",
+              "CONCEPT_CLASS_ID": "CPT4"
+            }
+          },
+          {
+            "concept": {
+              "CONCEPT_ID": 46257467,
+              "CONCEPT_NAME": "Extracorporeal membrane oxygenation (ECMO)/extracorporeal life support (ECLS) provided by physician; reposition peripheral (arterial and/or venous) cannula(e), percutaneous, 6 years and older (includes fluoroscopic guidance, when performed)",
+              "STANDARD_CONCEPT": "S",
+              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "INVALID_REASON": "V",
+              "INVALID_REASON_CAPTION": "Valid",
+              "CONCEPT_CODE": "33958",
+              "DOMAIN_ID": "Procedure",
+              "VOCABULARY_ID": "CPT4",
+              "CONCEPT_CLASS_ID": "CPT4"
+            }
+          },
+          {
+            "concept": {
+              "CONCEPT_ID": 2002247,
+              "CONCEPT_NAME": "Extracorporeal membrane oxygenation [ECMO]",
+              "STANDARD_CONCEPT_CAPTION": "Unknown",
+              "INVALID_REASON": "V",
+              "INVALID_REASON_CAPTION": "Valid",
+              "CONCEPT_CODE": "39.65",
+              "DOMAIN_ID": "Procedure",
+              "VOCABULARY_ID": "ICD9Proc",
+              "CONCEPT_CLASS_ID": "4-dig billing code"
+            }
+          },
+          {
+            "concept": {
+              "CONCEPT_ID": 46257400,
+              "CONCEPT_NAME": "Insertion of left heart vent by thoracic incision (eg, sternotomy, thoracotomy) for ECMO/ECLS",
+              "STANDARD_CONCEPT": "S",
+              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "INVALID_REASON": "V",
+              "INVALID_REASON_CAPTION": "Valid",
+              "CONCEPT_CODE": "33988",
+              "DOMAIN_ID": "Procedure",
+              "VOCABULARY_ID": "CPT4",
+              "CONCEPT_CLASS_ID": "CPT4"
+            }
+          },
+          {
+            "concept": {
+              "CONCEPT_ID": 46257469,
+              "CONCEPT_NAME": "Removal of left heart vent by thoracic incision (eg, sternotomy, thoracotomy) for ECMO/ECLS",
+              "STANDARD_CONCEPT": "S",
+              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "INVALID_REASON": "V",
+              "INVALID_REASON_CAPTION": "Valid",
+              "CONCEPT_CODE": "33989",
+              "DOMAIN_ID": "Procedure",
+              "VOCABULARY_ID": "CPT4",
+              "CONCEPT_CLASS_ID": "CPT4"
+            }
+          },
+          {
+            "concept": {
+              "CONCEPT_ID": 37206601,
+              "CONCEPT_NAME": "Venoarterial extracorporeal membrane oxygenation",
+              "STANDARD_CONCEPT": "S",
+              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "INVALID_REASON": "V",
+              "INVALID_REASON_CAPTION": "Valid",
+              "CONCEPT_CODE": "786451004",
+              "DOMAIN_ID": "Procedure",
+              "VOCABULARY_ID": "SNOMED",
+              "CONCEPT_CLASS_ID": "Procedure"
+            }
+          },
+          {
+            "concept": {
+              "CONCEPT_ID": 37206603,
+              "CONCEPT_NAME": "Venovenous extracorporeal membrane oxygenation",
+              "STANDARD_CONCEPT": "S",
+              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "INVALID_REASON": "V",
+              "INVALID_REASON_CAPTION": "Valid",
+              "CONCEPT_CODE": "786453001",
+              "DOMAIN_ID": "Procedure",
+              "VOCABULARY_ID": "SNOMED",
+              "CONCEPT_CLASS_ID": "Procedure"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": 1,
+      "name": "[EB] ARDS concept set",
+      "expression": {
+        "items": [
+          {
+            "concept": {
+              "CONCEPT_ID": 4191650,
+              "CONCEPT_NAME": "Acute respiratory distress",
+              "STANDARD_CONCEPT": "S",
+              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "INVALID_REASON": "V",
+              "INVALID_REASON_CAPTION": "Valid",
+              "CONCEPT_CODE": "373895009",
+              "DOMAIN_ID": "Condition",
+              "VOCABULARY_ID": "SNOMED",
+              "CONCEPT_CLASS_ID": "Clinical Finding"
+            }
+          },
+          {
+            "concept": {
+              "CONCEPT_ID": 4195694,
+              "CONCEPT_NAME": "Acute respiratory distress syndrome",
+              "STANDARD_CONCEPT": "S",
+              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "INVALID_REASON": "V",
+              "INVALID_REASON_CAPTION": "Valid",
+              "CONCEPT_CODE": "67782005",
+              "DOMAIN_ID": "Condition",
+              "VOCABULARY_ID": "SNOMED",
+              "CONCEPT_CLASS_ID": "Clinical Finding"
+            }
+          },
+          {
+            "concept": {
+              "CONCEPT_ID": 257907,
+              "CONCEPT_NAME": "Disorder of lung",
+              "STANDARD_CONCEPT": "S",
+              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "INVALID_REASON": "V",
+              "INVALID_REASON_CAPTION": "Valid",
+              "CONCEPT_CODE": "19829001",
+              "DOMAIN_ID": "Condition",
+              "VOCABULARY_ID": "SNOMED",
+              "CONCEPT_CLASS_ID": "Clinical Finding"
+            },
+            "includeDescendants": true
+          },
+          {
+            "concept": {
+              "CONCEPT_ID": 4060710,
+              "CONCEPT_NAME": "O/E - respiratory distress",
+              "STANDARD_CONCEPT": "S",
+              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "INVALID_REASON": "V",
+              "INVALID_REASON_CAPTION": "Valid",
+              "CONCEPT_CODE": "162892000",
+              "DOMAIN_ID": "Condition",
+              "VOCABULARY_ID": "SNOMED",
+              "CONCEPT_CLASS_ID": "Clinical Finding"
+            }
+          },
+          {
+            "concept": {
+              "CONCEPT_ID": 4232327,
+              "CONCEPT_NAME": "Postimmersion-submersion syndrome",
+              "STANDARD_CONCEPT": "S",
+              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "INVALID_REASON": "V",
+              "INVALID_REASON_CAPTION": "Valid",
+              "CONCEPT_CODE": "89687005",
+              "DOMAIN_ID": "Condition",
+              "VOCABULARY_ID": "SNOMED",
+              "CONCEPT_CLASS_ID": "Clinical Finding"
+            }
+          },
+          {
+            "concept": {
+              "CONCEPT_ID": 4025173,
+              "CONCEPT_NAME": "Pulmonary insufficiency following shock",
+              "STANDARD_CONCEPT": "S",
+              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "INVALID_REASON": "V",
+              "INVALID_REASON_CAPTION": "Valid",
+              "CONCEPT_CODE": "196151000",
+              "DOMAIN_ID": "Condition",
+              "VOCABULARY_ID": "SNOMED",
+              "CONCEPT_CLASS_ID": "Clinical Finding"
+            }
+          },
+          {
+            "concept": {
+              "CONCEPT_ID": 4024117,
+              "CONCEPT_NAME": "Pulmonary insufficiency following surgery",
+              "STANDARD_CONCEPT": "S",
+              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "INVALID_REASON": "V",
+              "INVALID_REASON_CAPTION": "Valid",
+              "CONCEPT_CODE": "196152007",
+              "DOMAIN_ID": "Condition",
+              "VOCABULARY_ID": "SNOMED",
+              "CONCEPT_CLASS_ID": "Clinical Finding"
+            }
+          },
+          {
+            "concept": {
+              "CONCEPT_ID": 4024118,
+              "CONCEPT_NAME": "Pulmonary insufficiency following trauma",
+              "STANDARD_CONCEPT": "S",
+              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "INVALID_REASON": "V",
+              "INVALID_REASON_CAPTION": "Valid",
+              "CONCEPT_CODE": "196153002",
+              "DOMAIN_ID": "Condition",
+              "VOCABULARY_ID": "SNOMED",
+              "CONCEPT_CLASS_ID": "Clinical Finding"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": 2,
+      "name": "[EB] Chronic respitory disease concept set",
+      "expression": {
+        "items": [
+          {
+            "concept": {
+              "CONCEPT_ID": 4063381,
+              "CONCEPT_NAME": "Chronic disease of respiratory system",
+              "STANDARD_CONCEPT": "S",
+              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "INVALID_REASON": "V",
+              "INVALID_REASON_CAPTION": "Valid",
+              "CONCEPT_CODE": "17097001",
+              "DOMAIN_ID": "Condition",
+              "VOCABULARY_ID": "SNOMED",
+              "CONCEPT_CLASS_ID": "Clinical Finding"
+            },
+            "includeDescendants": true
+          }
+        ]
+      }
+    }
+  ],
+  "PrimaryCriteria": {
+    "CriteriaList": [
+      {
+        "ProcedureOccurrence": {
+          "CodesetId": 0
+        }
+      }
+    ],
+    "ObservationWindow": {
+      "PriorDays": 90,
+      "PostDays": 0
+    },
+    "PrimaryCriteriaLimit": {
+      "Type": "First"
+    }
+  },
+  "QualifiedLimit": {
+    "Type": "First"
+  },
+  "ExpressionLimit": {
+    "Type": "First"
+  },
+  "InclusionRules": [
+    {
+      "name": "Age over 18",
+      "expression": {
+        "Type": "ALL",
+        "CriteriaList": [],
+        "DemographicCriteriaList": [
+          {
+            "Age": {
+              "Value": 18,
+              "Op": "gte"
+            }
+          }
+        ],
+        "Groups": []
+      }
+    },
+    {
+      "name": "ARDS over prior 30 days",
+      "expression": {
+        "Type": "ALL",
+        "CriteriaList": [
+          {
+            "Criteria": {
+              "ConditionOccurrence": {
+                "CodesetId": 1
+              }
+            },
+            "StartWindow": {
+              "Start": {
+                "Days": 30,
+                "Coeff": -1
+              },
+              "End": {
+                "Days": 0,
+                "Coeff": 1
+              }
+            },
+            "Occurrence": {
+              "Type": 2,
+              "Count": 1
+            }
+          }
+        ],
+        "DemographicCriteriaList": [],
+        "Groups": []
+      }
+    },
+    {
+      "name": "No chronic respitory disease",
+      "expression": {
+        "Type": "ALL",
+        "CriteriaList": [
+          {
+            "Criteria": {
+              "ConditionOccurrence": {
+                "CodesetId": 2
+              }
+            },
+            "StartWindow": {
+              "Start": {
+                "Days": 90,
+                "Coeff": -1
+              },
+              "End": {
+                "Days": 0,
+                "Coeff": -1
+              }
+            },
+            "Occurrence": {
+              "Type": 1,
+              "Count": 0
+            }
+          }
+        ],
+        "DemographicCriteriaList": [],
+        "Groups": []
+      }
+    }
+  ],
+  "CensoringCriteria": [],
+  "CollapseSettings": {
+    "CollapseType": "ERA",
+    "EraPad": 0
+  },
+  "CensorWindow": {}
+}
