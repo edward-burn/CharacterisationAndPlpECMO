@@ -5,7 +5,7 @@ A rapid network study on Extracorporeal membrane oxygenation (ECMO) to inform it
 
 - Analytics use case(s): **Characterization, Patient Level Prediction**
 - Study type: **Clinical Application**
-- Study lead: **Edward Burn**
+- Study lead: **Edward Burn (edward.burn@ndorms.ox.ac.uk**
 - Study lead forums tag: **To be added**
 - Study start date: **March 13, 2020)**
 - Study end date: **_**
