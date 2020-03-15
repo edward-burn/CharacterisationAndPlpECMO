@@ -1,0 +1,4 @@
+2020-03-15 16:29:22	[Main thread]	INFO	CohortDiagnosticsECMO	runCohortDiagnostics	Creating cohorts
+2020-03-15 16:30:27	[Main thread]	INFO	CohortDiagnosticsECMO	runCohortDiagnostics	Creating cohorts
+2020-03-15 16:32:05	[Main thread]	INFO	CohortDiagnosticsECMO	runCohortDiagnostics	Creating cohorts
+2020-03-15 16:33:48	[Main thread]	INFO	CohortDiagnosticsECMO	runCohortDiagnostics	Creating cohorts
