@@ -1,4 +1,4 @@
-[A rapid network study on Extracorporeal membrane oxygenation (ECMO) to inform its use in the management of COVID-19]
+A rapid network study on Extracorporeal membrane oxygenation (ECMO) to inform its use in the management of COVID-19
 =============
 
 <img src="https://img.shields.io/badge/Study%20Status-Started-blue.svg" alt="Study Status: Started"> 
