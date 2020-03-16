@@ -2,17 +2,35 @@ DBMS:
 postgresql
 
 Error:
-org.postgresql.util.PSQLException: ERROR: relation "main.concept" does not exist
-  Position: 155
+org.postgresql.util.PSQLException: ERROR: relation "cdm_ibm_ccae_v1103.concept_relationship" does not exist
+  Position: 214
 
 SQL:
-INSERT INTO Codesets (codeset_id, concept_id)
-SELECT 0 as codeset_id, c.concept_id FROM (select distinct I.concept_id FROM
-( 
-  select concept_id from main.CONCEPT where concept_id in (46257441,37206602,4338595,46257586,4052536,40379806,44515635,46257585,46257511,46257510,46257682,46257543,46257398,46257438,46257466,46257680,46257399,46257468,46257440,46257684,46257467,2002247,44811012,46257400,46257469,37206601,37206603)and invalid_reason is null
+CREATE TEMP TABLE starting_concepts
 
-) I
-) C
+AS
+SELECT
+concept.concept_id,
+	concept_name
+
+FROM
+(
+	SELECT concept_id
+	FROM Codesets
+	WHERE codeset_id = 1
+	
+	UNION
+	
+	SELECT concept_id_1
+	FROM Codesets codesets
+	INNER JOIN cdm_ibm_ccae_v1103.concept_relationship
+		ON codesets.concept_id = concept_id_2
+			AND concept_relationship.relationship_id = 'Maps to'
+			AND concept_relationship.invalid_reasON IS NULL
+	WHERE codeset_id = 1
+	) all_concepts
+INNER JOIN omop.concept
+	ON all_concepts.concept_id = concept.concept_id
 
 R version:
 R version 3.6.3 (2020-02-29)
@@ -30,5 +48,8 @@ Attached base packages:
 - base
 
 Other attached packages:
-- CohortDiagnosticsECMO (0.0.1)
+- DT (0.12)
+- shinydashboard (0.7.1)
+- shiny (1.4.0.2)
+- DiagECMO (0.0.1)
 - DatabaseConnector (2.4.2)

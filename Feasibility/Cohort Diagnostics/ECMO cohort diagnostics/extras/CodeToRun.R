@@ -1,17 +1,7 @@
-# Make sure to install all dependencies (not needed if already done):
-# install.packages("SqlRender")
-# install.packages("DatabaseConnector")
-# install.packages("ggplot2")
-# install.packages("ParallelLogger")
-# install.packages("readr")
-# install.packages("tibble")
-# install.packages("dplyr")
-# install.packages("RJSONIO")
-# install.packages("devtools")
-# devtools::install_github("FeatureExtraction")
-# devtools::install_github("ROhdsiWebApi")
-# devtools::install_github("CohortDiagnostics")
 
+
+# fix to runOrphanConcepts on develop branch of CohortDiagnostics
+# devtools::install_github("OHDSI/CohortDiagnostics", ref = "develop")
 
 # Load the package
 library(DiagECMO)
@@ -53,7 +43,7 @@ runCohortDiagnostics(connectionDetails = connectionDetails,
                      createCohorts = TRUE,
                      runInclusionStatistics = FALSE,
                      runIncludedSourceConcepts = FALSE,
-                     runOrphanConcepts = FALSE,
+                     runOrphanConcepts = FALSE, 
                      runTimeDistributions = FALSE,
                      runBreakdownIndexEvents = FALSE,
                      runIncidenceRates = FALSE,
