@@ -1,7 +1,6 @@
 
-
-# fix to runOrphanConcepts on develop branch of CohortDiagnostics
-# devtools::install_github("OHDSI/CohortDiagnostics", ref = "develop")
+# make sure latest version of CohortDiagnostics is installed 
+# devtools::install_github("OHDSI/CohortDiagnostics")
 
 # Load the package
 library(DiagECMO)
