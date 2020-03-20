@@ -1,24 +1,24 @@
 "cohortName","ruleSequence","ruleName","cohortId"
-"ECMO",0,"Aged 18 or older",171
-"ECMO",1,"respiratory failure",171
-"ECMO",2,"No transplant p",171
-"ECMO",3,"No transplant c",171
-"ECMO",4,"No lung disease ",171
-"ECMO",5,"No chest trauma",171
-"ECMO",6,"No pneum p",171
-"ECMO",7,"No pneum c",171
-"ECMO",8,"No pe",171
-"ECMO",9,"No cardiac p",171
-"ECMO age and 90 day",0,"Aged 18 or older",183
-"ECMO cohort age only",0,"Aged 18 or older",178
-"ECMO w viral infection",0,"Aged 18 or older",177
-"ECMO w viral infection",1,"respiratory failure",177
-"ECMO w viral infection",2,"No transplant proc",177
-"ECMO w viral infection",3,"No transplant c",177
-"ECMO w viral infection",4,"No lung disease ",177
-"ECMO w viral infection",5,"No chest trauma",177
-"ECMO w viral infection",6,"No pneum p",177
-"ECMO w viral infection",7,"No pneum c",177
-"ECMO w viral infection",8,"No pe",177
-"ECMO w viral infection",9,"No cardiac p",177
-"ECMO w viral infection",10,"viral infection",177
+"ECMO cohort",0,"Aged 18 or older",3
+"ECMO cohort",1,"ARDS",3
+"ECMO cohort",2,"No transplant procedure",3
+"ECMO cohort",3,"No transplant condition",3
+"ECMO cohort",4,"No lung disease ",3
+"ECMO cohort",5,"No chest trauma",3
+"ECMO cohort",6,"No pneumonectomy procedure",3
+"ECMO cohort",7,"No pneumonectomy condition",3
+"ECMO cohort",8,"No pulmonary embolism",3
+"ECMO cohort",9,"No cardiac procedure",3
+"ECMO cohort age and 30 day",0,"Aged 18 or older",2
+"ECMO cohort age only",0,"Aged 18 or older",1
+"ECMO cohort with pneumonia",0,"Aged 18 or older",4
+"ECMO cohort with pneumonia",1,"ARDS",4
+"ECMO cohort with pneumonia",2,"No transplant procedure",4
+"ECMO cohort with pneumonia",3,"No transplant condition",4
+"ECMO cohort with pneumonia",4,"No lung disease ",4
+"ECMO cohort with pneumonia",5,"No chest trauma",4
+"ECMO cohort with pneumonia",6,"No pneumonectomy procedure",4
+"ECMO cohort with pneumonia",7,"No pneumonectomy condition",4
+"ECMO cohort with pneumonia",8,"No pulmonary embolism",4
+"ECMO cohort with pneumonia",9,"No cardiac procedure",4
+"ECMO cohort with pneumonia",10,"Pneumonia",4

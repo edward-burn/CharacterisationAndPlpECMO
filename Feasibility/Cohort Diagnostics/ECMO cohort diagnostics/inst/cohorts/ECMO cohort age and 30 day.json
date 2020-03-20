@@ -1282,7 +1282,7 @@
       }
     ],
     "ObservationWindow": {
-      "PriorDays": [0],
+      "PriorDays": [30],
       "PostDays": [0]
     },
     "PrimaryCriteriaLimit": {
