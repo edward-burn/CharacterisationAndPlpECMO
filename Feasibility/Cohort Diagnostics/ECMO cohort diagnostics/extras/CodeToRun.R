@@ -1,4 +1,6 @@
 
+install.packages("zip")
+
 # make sure latest version of CohortDiagnostics is installed 
 # devtools::install_github("OHDSI/CohortDiagnostics")
 
@@ -49,6 +51,9 @@ runCohortDiagnostics(connectionDetails = connectionDetails,
                      runCohortOverlap = FALSE,
                      runCohortCharacterization = TRUE,
                      minCellCount = 5)
+# add bespoke table and figures
+library(FeatureExtraction)
+
 
 # To view the results:
 CohortDiagnostics::launchDiagnosticsExplorer(file.path(outputFolder, "diagnosticsExport"))
