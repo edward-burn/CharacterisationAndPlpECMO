@@ -1,9 +1,15 @@
 
-#install.packages("zip")
-library(zip)
-
-# make sure latest version of CohortDiagnostics is installed 
+# make sure you have the following OHDSI packages installed
+# devtools::install_github("OHDSI/DatabaseConnector")
+# devtools::install_github("OHDSI/FeatureExtraction)
 # devtools::install_github("OHDSI/CohortDiagnostics")
+
+# some extra packages are also required for this study
+#install.packages("zip")
+#install.packages("DiagrammeR")
+#install.packages("htmltools")
+#install.packages("webshot")
+
 
 # Load the package
 library(DiagECMO)
@@ -32,7 +38,8 @@ maxCores <- parallel::detectCores()
 # outputFolder<- 
 
 
-# Use this to run the cohorttDiagnostics. The results will be stored in the diagnosticsExport subfolder of the outputFolder. This can be shared between sites.
+# Run the cohorttDiagnostics followed by an extra file for plots and tables 
+#The results will be stored in the diagnosticsExport subfolder of the outputFolder. 
 runCohortDiagnostics(connectionDetails = connectionDetails,
                      cdmDatabaseSchema = cdmDatabaseSchema,
                      cohortDatabaseSchema = cohortDatabaseSchema,
@@ -52,15 +59,9 @@ runCohortDiagnostics(connectionDetails = connectionDetails,
                      runCohortOverlap = FALSE,
                      runCohortCharacterization = TRUE,
                      minCellCount = 5)
+source(file.path("extras","plots and tables.R"))
 
-# add bespoke table and figures to results folder
-zip::zip_list(file.path(outputFolder, "diagnosticsExport", 
-                        paste0("Results_", databaseId, ".zip")))$filename
-# nb if this list of files includat any "table.1" please manually delete these from the
-# zipped results folder
-source(file.path("extras","CodeToRun plots and tables.R"))
-
-
-# To view the results:
-CohortDiagnostics::launchDiagnosticsExplorer(file.path(outputFolder, "diagnosticsExport"))
+# for a given dataset you will have two zip files with results ready to share
+# first with generic cohort diagnostics,
+# second with a study specific tables and figures
 

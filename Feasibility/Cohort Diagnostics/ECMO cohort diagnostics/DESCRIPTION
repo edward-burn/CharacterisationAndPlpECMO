@@ -1,16 +1,20 @@
 Package: DiagECMO
 Type: Package
-Title: A Package Skeleton for Cohort Diagnostics
+Title: ECMO Cohort Diagnostics
 Version: 0.0.1
-Author: Martijn Schuemie [aut, cre]
-Maintainer: Martijn J. Schuemie <schuemie@ohdsi.org>
-Description: A skeleton package, to be used as a starting point when you just want to run cohort diagnostics.
+Author: Ed Burn 
+Maintainer: Ed Burn <edward.burn@ndorms.ox.ac.uk>
+Description: ECMO study cohort diagnostics
 Depends:
-    DatabaseConnector (>= 2.2.0)
+    DatabaseConnector (>= 2.2.0),
+    FeatureExtraction,
+  	dplyr,
+  	zip,
+  	DiagrammeR,
+  	htmltools,
+  	webshot
 Imports:
 	CohortDiagnostics,
-	FeatureExtraction,
-	dplyr
 Suggests:
     knitr,
     rmarkdown,

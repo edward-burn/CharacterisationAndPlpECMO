@@ -1,6 +1,11 @@
 # Plots and tables
-
-# table 1 settings -----
+# create folder for tables and plots ----
+if (file.exists(file.path(outputFolder, "diagnosticsExport", paste0("Results_", databaseId),
+                          "plots_tables"))==FALSE){
+  dir.create(file.path(outputFolder, "diagnosticsExport", paste0("Results_", databaseId,
+                       "_plots_tables")))
+} 
+# table settings -----
 table1_specs<-getDefaultTable1Specifications()
 table1_specs<-table1_specs %>% 
   filter(label!="CHADS2Vasc") %>% 
@@ -74,14 +79,10 @@ table.1<-rbind(
              values=covariateData$metaData$populationSize),
 table.1)
 
-
-
-#export
-write.csv2(table.1, file.path(outputFolder,  "table.1.csv"),
+#save
+write.csv2(table.1, file.path(outputFolder, "diagnosticsExport", paste0("Results_", databaseId,
+                                                                        "_plots_tables"), "table.1.csv"),
            row.names = FALSE)
-zip::zipr_append(file.path(outputFolder, "diagnosticsExport", paste0("Results_", databaseId, ".zip")),
-                 file.path(outputFolder,  "table.1.csv"))
-unlink(file.path(outputFolder,  "table.1.csv"))
 
 
 
@@ -98,12 +99,13 @@ table.1.pneumonia_comparison <- createTable1(covariateData, covariateData.pneumo
                                              specifications=table1_specs,
                        output="one column")
 
-#export
-write.csv2(table.1.pneumonia_comparison, file.path(outputFolder,  "table.1.pneumonia_comparison.csv"),
+
+#save
+write.csv2(table.1.pneumonia_comparison, file.path(outputFolder, "diagnosticsExport", paste0("Results_", databaseId,
+                                                                        "_plots_tables"),
+                                                   "table.1.pneumonia_comparison.csv"),
            row.names = FALSE)
-zip::zipr_append(file.path(outputFolder, "diagnosticsExport", paste0("Results_", databaseId, ".zip")),
-                 file.path(outputFolder,  "table.1.pneumonia_comparison.csv"))
-unlink(file.path(outputFolder,  "table.1.pneumonia_comparison.csv"))
+
 
 
 
@@ -120,23 +122,16 @@ table.1.age_30.day_comparison <- createTable1(covariateData, covariateData.age_3
                                               specifications=table1_specs,
                                               output="one column")
 
-write.csv2(table.1.age_30.day_comparison, file.path(outputFolder, "diagnosticsExport", paste0("Results_", databaseId),
-                                                   "plots_tables", "table.1.age_30.day_comparison.csv"),
+#save
+write.csv2(table.1.age_30.day_comparison, file.path(outputFolder, "diagnosticsExport", paste0("Results_", databaseId,
+                                                                                             "_plots_tables"),
+                                                   "table.1.age_30.day_comparison.csv"),
            row.names = FALSE)
 
-#export
-write.csv2(table.1.age_30.day_comparison, file.path(outputFolder,  "table.1.age_30.day_comparison.csv"),
-           row.names = FALSE)
-zip::zipr_append(file.path(outputFolder, "diagnosticsExport", paste0("Results_", databaseId, ".zip")),
-                 file.path(outputFolder,  "table.1.age_30.day_comparison.csv"))
-unlink(file.path(outputFolder,  "table.1.age_30.day_comparison.csv"))
 
-### -------------
-# flow chart
-library(DiagrammeR)
-library(htmltools)
-library(webshot)
-webshot::install_phantomjs()
+
+# inclusion flow chart -----
+suppressMessages(webshot::install_phantomjs())
 
 
 # get count without 30 day restriction (but with age as adult)
@@ -171,19 +166,18 @@ flowchart<-"digraph flowchart {
 node [fontname = Helvetica, shape = rectangle]
 tab1 [label = 'ECMO, age 18 or older  (n: n.ecmo)']
 tab2 [label = 'With 30 days of prior history (n: n.prior)']
-tab3 [label = 'ARDS (n: n.ARDS)']
+tab3 [label = 'With ARDS (n: n.ARDS)']
 tab4 [label = 'No transplant (n: n.trans)']
 tab5 [label = 'No lung disease (n: n.lung)']
 tab6 [label = 'No chest trauma (n: n.chest)']
 tab7 [label = 'No pneumonectomy (n: n.pneum)']
 tab8 [label = 'No pulmonary embolism (n: n.pe)']
 tab9 [label = 'No cardiac procedure (n: n.card)']
-tab10 [label = 'Pneumonia (n: n.pneu)'] 
+tab10 [label = 'With pneumonia (n: n.pneu)'] 
 
 # edge definitions with the node IDs
 tab1 -> tab2 -> tab3 -> tab4 -> tab5-> tab6 -> tab7 -> tab8-> tab9 -> tab10;
-}
-"
+}"
 flowchart<-gsub("n.ecmo", start.n , flowchart)
 flowchart<-gsub("n.prior", inclusion$remain_subjects[1] , flowchart)
 flowchart<-gsub("n.ARDS", inclusion$remain_subjects[2] , flowchart)
@@ -196,10 +190,24 @@ flowchart<-gsub("n.card", inclusion$remain_subjects[10] , flowchart)
 flowchart<-gsub("n.pneu", inclusion$remain_subjects[11] , flowchart)
 
 grViz(flowchart) %>% html_print(viewer=NULL) %>% 
-   webshot(file.path(outputFolder,  "inlusion.png"))
+   webshot(file.path(outputFolder, "diagnosticsExport", paste0("Results_", databaseId,
+                                                               "_plots_tables"),  
+                     "inlusion.png"))
 
 
+# zip file with plots and tables ----
+wd<-getwd()
+setwd(file.path(outputFolder, "diagnosticsExport"))
+
+zip::zipr(zipfile=file.path(outputFolder, "diagnosticsExport", 
+                            paste0("Results_", databaseId, "_plots_tables.zip")),
+          paste0("Results_SIDIAP_plots_tables/",
+                 list.files(file.path(outputFolder, "diagnosticsExport", 
+                     paste0("Results_", databaseId, "_plots_tables")))))
+setwd(wd)
+unlink(file.path(outputFolder, "diagnosticsExport", 
+                 paste0("Results_", databaseId, "_plots_tables")),
+       recursive = T)
 
 
-
-
+DatabaseConnector::disconnect(connection)
