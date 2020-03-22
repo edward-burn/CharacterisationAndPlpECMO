@@ -58,7 +58,7 @@ runCohortDiagnostics(connectionDetails = connectionDetails,
                      runIncidenceRates = FALSE,
                      runCohortOverlap = FALSE,
                      runCohortCharacterization = TRUE,
-                     minCellCount = 5)
+                     minCellCount = 10)
 source(file.path("extras","plots and tables.R"))
 
 # for a given dataset you will have two zip files with results ready to share
