@@ -209,5 +209,3 @@ unlink(file.path(outputFolder, "diagnosticsExport",
                  paste0("Results_", databaseId, "_plots_tables")),
        recursive = T)
 
-
-DatabaseConnector::disconnect(connection)
