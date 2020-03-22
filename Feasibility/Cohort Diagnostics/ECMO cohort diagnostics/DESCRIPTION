@@ -8,7 +8,9 @@ Description: A skeleton package, to be used as a starting point when you just wa
 Depends:
     DatabaseConnector (>= 2.2.0)
 Imports:
-	CohortDiagnostics
+	CohortDiagnostics,
+	FeatureExtraction,
+	dplyr
 Suggests:
     knitr,
     rmarkdown,

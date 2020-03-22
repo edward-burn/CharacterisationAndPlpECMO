@@ -1,5 +1,6 @@
 
-install.packages("zip")
+#install.packages("zip")
+library(zip)
 
 # make sure latest version of CohortDiagnostics is installed 
 # devtools::install_github("OHDSI/CohortDiagnostics")
@@ -51,9 +52,15 @@ runCohortDiagnostics(connectionDetails = connectionDetails,
                      runCohortOverlap = FALSE,
                      runCohortCharacterization = TRUE,
                      minCellCount = 5)
-# add bespoke table and figures
-library(FeatureExtraction)
+
+# add bespoke table and figures to results folder
+zip::zip_list(file.path(outputFolder, "diagnosticsExport", 
+                        paste0("Results_", databaseId, ".zip")))$filename
+# nb if this list of files includat any "table.1" please manually delete these from the
+# zipped results folder
+source(file.path("extras","CodeToRun plots and tables.R"))
 
 
 # To view the results:
 CohortDiagnostics::launchDiagnosticsExplorer(file.path(outputFolder, "diagnosticsExport"))
+
