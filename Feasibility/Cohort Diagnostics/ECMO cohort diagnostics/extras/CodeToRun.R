@@ -59,7 +59,7 @@ runCohortDiagnostics(connectionDetails = connectionDetails,
                      runCohortOverlap = FALSE,
                      runCohortCharacterization = TRUE,
                      minCellCount = 10)
-source(file.path("extras","plots and tables.R"))
+source(file.path("extras","table 1.R"))
 
 # for a given dataset you will have two zip files with results ready to share
 # first with generic cohort diagnostics,
