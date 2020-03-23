@@ -1,7 +1,7 @@
 # Table 1s
 # create folder for tables and plots ----
-if (file.exists(file.path(outputFolder, "diagnosticsExport", paste0("Results_", databaseId),
-                          "plots_tables"))==FALSE){
+if (file.exists(file.path(outputFolder, "diagnosticsExport", paste0("Results_", databaseId,
+                                                                    "_plots_tables")))==FALSE){
   dir.create(file.path(outputFolder, "diagnosticsExport", paste0("Results_", databaseId,
                                                                  "_plots_tables")))
 } 
@@ -101,9 +101,12 @@ setwd(file.path(outputFolder, "diagnosticsExport"))
 
 zip::zipr(zipfile=file.path(outputFolder, "diagnosticsExport", 
                             paste0("Results_", databaseId, "_plots_tables.zip")),
-          paste0("Results_SIDIAP_plots_tables/",
+          paste0(paste0("Results_", databaseId,
+                        "_plots_tables/"),
                  list.files(file.path(outputFolder, "diagnosticsExport", 
                                       paste0("Results_", databaseId, "_plots_tables")))))
+
+
 setwd(wd)
 unlink(file.path(outputFolder, "diagnosticsExport", 
                  paste0("Results_", databaseId, "_plots_tables")),
