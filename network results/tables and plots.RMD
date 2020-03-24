@@ -1,0 +1,123 @@
+---
+title: "OHDSI ECMO: tables and plots"
+output:
+  word_document:
+    reference_docx: word-styles-reference-01.docx
+editor_options: 
+  chunk_output_type: console
+---
+
+
+```{r setup , include=FALSE}
+knitr::opts_chunk$set(echo = FALSE, 
+                      warning=FALSE,
+                      fig.align = "center", 
+                      dev = "png",
+                      cache = FALSE)
+```
+
+```{r}
+library(knitr)
+library(flextable)
+library(officer)
+library(png)
+ 
+
+# folders -----
+folder.cohortDiagnostics.results<-"C:/Users/Ed/Dropbox/OHDSI/covid/ECMO/GitHub/CharacterisationAndPlpECMO/network results/cohort diagnostics"
+folder.table_1_output<-"C:/Users/Ed/Dropbox/OHDSI/covid/ECMO/GitHub/CharacterisationAndPlpECMO/network results/table 1 output"
+working.figs_tables<-"C:/Users/Ed/Dropbox/OHDSI/covid/ECMO/GitHub/CharacterisationAndPlpECMO/network results/working figures and tables"
+final.figs_tables<-"C:/Users/Ed/Dropbox/OHDSI/covid/ECMO/GitHub/CharacterisationAndPlpECMO/network results/final figures and tables"
+
+# data names
+names<-c("Results_CUIMC", "Results_optumDod",
+         "Results_hospital_charge_datamaster" )
+title.names<-c("CUIMC", "OPTUM",
+               "Hospital Charge Datamaster")
+
+```
+
+## Figure 1: Inclusion flow chart
+```{r}
+include_graphics(paste0(final.figs_tables,   "/inclusion_flow_charts.png"))
+```
+
+##### break
+
+## Table 1: Characteristics of study participants
+
+```{r , echo=FALSE}
+load(paste0(final.figs_tables, "/table.1.Rdata"))
+
+ft <- flextable(table.1) 
+ft <- set_header_labels(ft,
+    Characteristic = "", CUIMC = title.names[1],
+    optum = title.names[2], datamaster = title.names[3])
+autofit(ft)
+
+```
+
+
+
+##### break
+
+# Appendix
+
+## Appendix table 1 CUIMC patient characteristic: included ECMO vs all ECMO (adult age, 30 days history)
+```{r , echo=FALSE}
+table.1.CUIMC.age_30.day_comparison<-read.csv2(unz(
+             file.path(folder.table_1_output,
+             paste0(names[1],"_plots_tables", ".zip")), 
+             "table.1.age_30.day_comparison.csv"),
+             col.names=c("Characteristic", "inc",  "all", "SMD"),
+             stringsAsFactors = FALSE)
+table.1.CUIMC.age_30.day_comparison <- flextable(table.1.CUIMC.age_30.day_comparison) 
+table.1.CUIMC.age_30.day_comparison <- set_header_labels(table.1.CUIMC.age_30.day_comparison,
+    Characteristic = "", inc = "CUIMC included ECMO",
+    all = "CUIMC all ECMO", SMD = "SMD")
+autofit(table.1.CUIMC.age_30.day_comparison)
+
+```
+
+##### break
+
+## Appendix table 2 OPTUM patient characteristic: included ECMO vs all ECMO (adult age, 30 days history)
+```{r , echo=FALSE}
+table.1.optum.age_30.day_comparison<-read.csv2(unz(
+             file.path(folder.table_1_output,
+             paste0(names[2],"_plots_tables", ".zip")), 
+             "table.1.age_30.day_comparison.csv"),
+             col.names=c("Characteristic", "inc",  "all", "SMD"),
+             stringsAsFactors = FALSE)
+table.1.optum.age_30.day_comparison <- flextable(table.1.optum.age_30.day_comparison) 
+table.1.optum.age_30.day_comparison <- set_header_labels(table.1.optum.age_30.day_comparison,
+    Characteristic = "", inc = "OPTUM included ECMO",
+    all = "OPTUM all ECMO", SMD = "SMD")
+autofit(table.1.optum.age_30.day_comparison)
+
+
+```
+
+
+##### break
+
+## Appendix table 3 Hosptial Charge Datamaster patient characteristic: included ECMO vs all ECMO (adult age, 30 days history)
+```{r , echo=FALSE}
+table.1.datamaster.age_30.day_comparison<-read.csv2(unz(
+             file.path(folder.table_1_output,
+             paste0(names[3],"_plots_tables", ".zip")), 
+             "table.1.age_30.day_comparison.csv"),
+             col.names=c("Characteristic", "inc",  "all", "SMD"),
+             stringsAsFactors = FALSE)
+table.1.datamaster.age_30.day_comparison <- flextable(table.1.datamaster.age_30.day_comparison) 
+table.1.datamaster.age_30.day_comparison <- set_header_labels(table.1.datamaster.age_30.day_comparison,
+    Characteristic = "", inc = "Hospital Charge\nDatamaster included ECMO",
+    all = "Hospital Charge\nDatamaster all ECMO", SMD = "SMD")
+knit_print(autofit(table.1.datamaster.age_30.day_comparison),
+           ft.align="left")
+             
+             
+             
+            
+
+```
