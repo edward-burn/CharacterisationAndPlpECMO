@@ -64,4 +64,3 @@ source(file.path("extras","table 1.R"))
 # for a given dataset you will have two zip files with results ready to share
 # first with generic cohort diagnostics,
 # second with a study specific tables and figures
-
