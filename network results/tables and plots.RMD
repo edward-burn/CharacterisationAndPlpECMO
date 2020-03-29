@@ -29,20 +29,13 @@ folder.table_1_output<-"C:/Users/Ed/Dropbox/OHDSI/covid/ECMO/GitHub/Characterisa
 working.figs_tables<-"C:/Users/Ed/Dropbox/OHDSI/covid/ECMO/GitHub/CharacterisationAndPlpECMO/network results/working figures and tables"
 final.figs_tables<-"C:/Users/Ed/Dropbox/OHDSI/covid/ECMO/GitHub/CharacterisationAndPlpECMO/network results/final figures and tables"
 
-# data names
+# names ----
 names<-c("Results_CUIMC", "Results_optumDod",
-         "Results_hospital_charge_datamaster" )
+         "Results_hospital_charge_datamaster", "Results_CCAE", "Results_MDCD", "Results_Panther",
+         "Results_Premier" )
 title.names<-c("CUIMC", "OPTUM",
-               "Hospital Charge Datamaster")
-
+               "Hospital CDM", "CCAE", "MDCD", "PanTher",  "PHD")
 ```
-
-## Figure 1: Inclusion flow chart
-```{r}
-include_graphics(paste0(final.figs_tables,   "/inclusion_flow_charts.png"))
-```
-
-##### break
 
 ## Table 1: Characteristics of study participants
 
@@ -52,7 +45,8 @@ load(paste0(final.figs_tables, "/table.1.Rdata"))
 ft <- flextable(table.1) 
 ft <- set_header_labels(ft,
     Characteristic = "", CUIMC = title.names[1],
-    optum = title.names[2], datamaster = title.names[3])
+    optum = title.names[2], CCAE = title.names[4], datamaster = title.names[3],
+    mdcd=title.names[5], panther=title.names[6], premier=title.names[7])
 autofit(ft)
 
 ```
@@ -61,9 +55,87 @@ autofit(ft)
 
 ##### break
 
-# Appendix
 
-## Appendix table 1 CUIMC patient characteristic: included ECMO vs all ECMO (adult age, 30 days history)
+## Table 2: In-hospital outcomes  
+
+##### break
+
+
+
+## Table 3: All-cause mortality at 30 and 180 days 
+
+##### break
+
+## Figure 1. ROC plot
+
+##### break
+
+## Figure 2. Calibration plot
+
+##### break
+
+# Appendix 
+
+## Study inclusion flow charts
+
+### CUIMC 
+```{r}
+include_graphics(file.path(working.figs_tables,
+                     paste0(names[1],".inlusion1.png")))
+```
+
+##### break
+
+### OPTUM 
+```{r}
+include_graphics(file.path(working.figs_tables,
+                     paste0(names[2],".inlusion1.png")))
+```
+
+##### break 
+
+### Hospital CDM 
+```{r}
+include_graphics(file.path(working.figs_tables,
+                     paste0(names[3],".inlusion1.png")))
+```
+
+##### break
+
+### CCAE 
+```{r}
+include_graphics(file.path(working.figs_tables,
+                     paste0(names[4],".inlusion1.png")))
+```
+
+##### break
+
+### MDCD 
+```{r}
+include_graphics(file.path(working.figs_tables,
+                     paste0(names[5],".inlusion1.png")))
+```
+
+##### break
+
+### PanTher 
+```{r}
+include_graphics(file.path(working.figs_tables,
+                     paste0(names[6],".inlusion1.png")))
+```
+##### break
+
+### Premier 
+```{r}
+include_graphics(file.path(working.figs_tables,
+                     paste0(names[7],".inlusion1.png")))
+```
+
+##### break
+
+
+## Comparison of characteristics of ECMO with ARDS cohort to all patients undergoing ECMO (aged 18 or older, and with at least 30 days of prior observation time)
+### Appendix table 1 CUIMC patient characteristic:  ECMO with ARDS vs all ECMO 
 ```{r , echo=FALSE}
 table.1.CUIMC.age_30.day_comparison<-read.csv2(unz(
              file.path(folder.table_1_output,
@@ -73,7 +145,7 @@ table.1.CUIMC.age_30.day_comparison<-read.csv2(unz(
              stringsAsFactors = FALSE)
 table.1.CUIMC.age_30.day_comparison <- flextable(table.1.CUIMC.age_30.day_comparison) 
 table.1.CUIMC.age_30.day_comparison <- set_header_labels(table.1.CUIMC.age_30.day_comparison,
-    Characteristic = "", inc = "CUIMC included ECMO",
+    Characteristic = "", inc = "CUIMC ECMO with ARDS",
     all = "CUIMC all ECMO", SMD = "SMD")
 autofit(table.1.CUIMC.age_30.day_comparison)
 
@@ -81,7 +153,7 @@ autofit(table.1.CUIMC.age_30.day_comparison)
 
 ##### break
 
-## Appendix table 2 OPTUM patient characteristic: included ECMO vs all ECMO (adult age, 30 days history)
+### Appendix table 2 OPTUM patient characteristic:  ECMO with ARDS vs all ECMO 
 ```{r , echo=FALSE}
 table.1.optum.age_30.day_comparison<-read.csv2(unz(
              file.path(folder.table_1_output,
@@ -91,7 +163,7 @@ table.1.optum.age_30.day_comparison<-read.csv2(unz(
              stringsAsFactors = FALSE)
 table.1.optum.age_30.day_comparison <- flextable(table.1.optum.age_30.day_comparison) 
 table.1.optum.age_30.day_comparison <- set_header_labels(table.1.optum.age_30.day_comparison,
-    Characteristic = "", inc = "OPTUM included ECMO",
+    Characteristic = "", inc = "OPTUM ECMO with ARDS",
     all = "OPTUM all ECMO", SMD = "SMD")
 autofit(table.1.optum.age_30.day_comparison)
 
@@ -101,7 +173,7 @@ autofit(table.1.optum.age_30.day_comparison)
 
 ##### break
 
-## Appendix table 3 Hosptial Charge Datamaster patient characteristic: included ECMO vs all ECMO (adult age, 30 days history)
+### Appendix table 3 Hospital CDM patient characteristic:  ECMO with ARDS vs all ECMO 
 ```{r , echo=FALSE}
 table.1.datamaster.age_30.day_comparison<-read.csv2(unz(
              file.path(folder.table_1_output,
@@ -111,8 +183,8 @@ table.1.datamaster.age_30.day_comparison<-read.csv2(unz(
              stringsAsFactors = FALSE)
 table.1.datamaster.age_30.day_comparison <- flextable(table.1.datamaster.age_30.day_comparison) 
 table.1.datamaster.age_30.day_comparison <- set_header_labels(table.1.datamaster.age_30.day_comparison,
-    Characteristic = "", inc = "Hospital Charge\nDatamaster included ECMO",
-    all = "Hospital Charge\nDatamaster all ECMO", SMD = "SMD")
+    Characteristic = "", inc = "Hospital CDM ECMO with ARDS",
+    all = "Hospital CDM all ECMO", SMD = "SMD")
 knit_print(autofit(table.1.datamaster.age_30.day_comparison),
            ft.align="left")
              
@@ -121,3 +193,62 @@ knit_print(autofit(table.1.datamaster.age_30.day_comparison),
             
 
 ```
+### Appendix table 4 CCAE patient characteristic:  ECMO with ARDS vs all ECMO 
+```{r , echo=FALSE}
+table.1.ccae.age_30.day_comparison<-read.csv2(unz(
+             file.path(folder.table_1_output,
+             paste0(names[4],"_plots_tables", ".zip")), 
+             "table.1.age_30.day_comparison.csv"),
+             col.names=c("Characteristic", "inc",  "all", "SMD"),
+             stringsAsFactors = FALSE)
+table.1.ccae.age_30.day_comparison <- flextable(table.1.ccae.age_30.day_comparison) 
+table.1.ccae.age_30.day_comparison <- set_header_labels(table.1.ccae.age_30.day_comparison,
+    Characteristic = "", inc = "CCAE ECMO with ARDS",
+    all = "CCAE all ECMO", SMD = "SMD")
+autofit(table.1.ccae.age_30.day_comparison)
+
+
+```
+
+
+##### break
+
+### Appendix table 5 MDCD patient characteristic:  ECMO with ARDS vs all ECMO 
+```{r , echo=FALSE}
+table.1.ccae.age_30.day_comparison<-read.csv2(unz(
+             file.path(folder.table_1_output,
+             paste0(names[5],"_plots_tables", ".zip")), 
+             "table.1.age_30.day_comparison.csv"),
+             col.names=c("Characteristic", "inc",  "all", "SMD"),
+             stringsAsFactors = FALSE)
+table.1.ccae.age_30.day_comparison <- flextable(table.1.ccae.age_30.day_comparison) 
+table.1.ccae.age_30.day_comparison <- set_header_labels(table.1.ccae.age_30.day_comparison,
+    Characteristic = "", inc = "MDCD ECMO with ARDS",
+    all = "MDCD all ECMO", SMD = "SMD")
+autofit(table.1.ccae.age_30.day_comparison)
+
+
+```
+
+
+##### break
+
+### Appendix table 6 PanTher patient characteristic: ECMO with ARDS vs all ECMO 
+```{r , echo=FALSE}
+table.1.ccae.age_30.day_comparison<-read.csv2(unz(
+             file.path(folder.table_1_output,
+             paste0(names[6],"_plots_tables", ".zip")), 
+             "table.1.age_30.day_comparison.csv"),
+             col.names=c("Characteristic", "inc",  "all", "SMD"),
+             stringsAsFactors = FALSE)
+table.1.ccae.age_30.day_comparison <- flextable(table.1.ccae.age_30.day_comparison) 
+table.1.ccae.age_30.day_comparison <- set_header_labels(table.1.ccae.age_30.day_comparison,
+    Characteristic = "", inc = "PanTher ECMO with ARDS",
+    all = "PanTher all ECMO", SMD = "SMD")
+autofit(table.1.ccae.age_30.day_comparison)
+
+
+```
+
+
+##### break

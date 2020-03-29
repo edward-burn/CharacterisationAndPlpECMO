@@ -23,12 +23,12 @@ final.figs_tables<-"C:/Users/Ed/Dropbox/OHDSI/covid/ECMO/GitHub/Characterisation
 
 # Data sources ----
 names<-c("Results_CUIMC", "Results_optumDod",
-         "Results_hospital_charge_datamaster" )
+         "Results_hospital_charge_datamaster", "Results_CCAE", "Results_MDCD", "Results_Panther",
+         "Results_Premier" )
 title.names<-c("CUIMC", "OPTUM",
-               "Hospital Charge Datamaster")
+               "Hospital CDM", "CCAE", "MDCD", "PanTher",  "PHD")
 # cohort diagnostics -----
-# CohortDiagnostics::launchDiagnosticsExplorer(
-#   "C:/Users/Ed/Dropbox/OHDSI/covid/ECMO/network results/cohort diagnostics")
+#CohortDiagnostics::launchDiagnosticsExplorer(folder.cohortDiagnostics.results)
 
 # Figure: Study inclusion flowchart  -----
 # flow charts
@@ -113,77 +113,52 @@ image_write(img, file.path(working.figs_tables,
 
 
 # add title and combine plots 
-img1 <- readPNG(file.path(working.figs_tables,
-                      paste0(names[1],".inlusion.png")))
-title1<-textGrob(title.names[1], gp=gpar(fontsize = 10,fontface="bold"))
+for(i in 1:length(names)){
+  img1 <- readPNG(file.path(working.figs_tables,
+                      paste0(names[i],".inlusion.png")))
+title1<-textGrob(title.names[i], gp=gpar(fontsize = 10,fontface="bold"))
 plot1<-grid.arrange(rasterGrob(img1),
              top = title1,
              padding = unit(1, "line"))
 ggsave(file.path(working.figs_tables,
-                      paste0(names[1],".inlusion1.png")),
+                      paste0(names[i],".inlusion1.png")),
           plot1)
 
 img<- image_read(file.path(working.figs_tables,
-                      paste0(names[1],".inlusion1.png")))
-img<-image_crop(img, geometry_area(700, 1343, 550))
+                      paste0(names[i],".inlusion1.png")))
+img<-image_crop(img, geometry_area(625, 1343, 575))
 
 image_write(img, file.path(working.figs_tables,
-                     paste0(names[1],".inlusion1.png")))
+                     paste0(names[i],".inlusion1.png")))
+}
 
 
-#
-img2 <- readPNG(file.path(working.figs_tables,
-                      paste0(names[2],".inlusion.png")))
-title2<-textGrob(title.names[2], gp=gpar(fontsize = 10,fontface="bold"))
-plot2<-grid.arrange(rasterGrob(img2),
-             top = title2,
-             padding = unit(1, "line"))
-ggsave(file.path(working.figs_tables,
-                      paste0(names[2],".inlusion1.png")),
-          plot2)
-img<- image_read(file.path(working.figs_tables,
-                      paste0(names[2],".inlusion1.png")))
-img<-image_crop(img, geometry_area(700, 1343, 550))
-image_write(img, file.path(working.figs_tables,
-                     paste0(names[2],".inlusion1.png")))
 
-
-img3 <- readPNG(file.path(working.figs_tables,
-                      paste0(names[3],".inlusion.png")))
-title2<-textGrob(title.names[3], gp=gpar(fontsize = 10,fontface="bold"))
-plot2<-grid.arrange(rasterGrob(img3),
-             top = title2,
-             padding = unit(1, "line"))
-ggsave(file.path(working.figs_tables,
-                      paste0(names[3],".inlusion1.png")),
-          plot2)
-img<- image_read(file.path(working.figs_tables,
-                      paste0(names[3],".inlusion1.png")))
-img<-image_crop(img, geometry_area(700, 1343, 550))
-image_write(img, file.path(working.figs_tables,
-                     paste0(names[3],".inlusion1.png")))
-
-
-#
-plot1 <- readPNG(file.path(working.figs_tables,
-                      paste0(names[1],".inlusion1.png")))
-plot2 <- readPNG(file.path(working.figs_tables,
-                      paste0(names[2],".inlusion1.png")))
-plot3 <- readPNG(file.path(working.figs_tables,
-                      paste0(names[3],".inlusion1.png")))
-plot<-grid.arrange(rasterGrob(plot1),
-             rasterGrob(plot2),
-             rasterGrob(plot3),
-             nrow=1) 
-ggsave(paste0(final.figs_tables,  
-              "/inclusion_flow_charts.png"), 
-       plot)
+# # combine plots
+# length(names)
+# plot1 <- readPNG(file.path(working.figs_tables,
+#                       paste0(names[1],".inlusion1.png")))
+# plot2 <- readPNG(file.path(working.figs_tables,
+#                       paste0(names[2],".inlusion1.png")))
+# plot3 <- readPNG(file.path(working.figs_tables,
+#                       paste0(names[3],".inlusion1.png")))
+# plot4 <- readPNG(file.path(working.figs_tables,
+#                       paste0(names[4],".inlusion1.png")))
+# plot<-grid.arrange(rasterGrob(plot1),
+#              rasterGrob(plot2),
+#              rasterGrob(plot3),
+#              rasterGrob(plot4),
+#              nrow=1) 
+# ggsave(paste0(final.figs_tables,  
+#               "/inclusion_flow_charts.png"), 
+#        plot)
 
 
 # Table 1: Patient characteristics -----
 
 
 # some differences in vars recorded ....
+# so will do these one by one ....
 table.1.CUIMC<-read.csv2(unz(
              file.path(folder.table_1_output,
              paste0(names[1],"_plots_tables", ".zip")), 
@@ -316,6 +291,200 @@ rm(table.1.datamaster.bin, table.1.datamaster.cont)
 
 
 
+
+
+# CCAE
+table.1.ccae<-read.csv2(unz(
+             file.path(folder.table_1_output,
+             paste0(names[4],"_plots_tables", ".zip")), 
+             "table.1.csv"),
+             col.names=c("Characteristic", "CCAE"),
+             stringsAsFactors = FALSE)
+table.1.ccae.bin<-table.1.ccae[1:66,]
+  
+table.1.ccae.cont<-table.1.ccae[69:92,]
+#age
+table.1.ccae.cont<-data.frame(
+Characteristic=c(
+  "Age (median [IQR])",
+  "Charlson score (median [IQR])",
+  "Hospital Frailty Risk Score (median [IQR])"),
+CCAE=c(
+# age
+paste0(table.1.ccae.cont[14,2], " [", table.1.ccae.cont[13,2], " to ",  table.1.ccae.cont[15,2], "]"),
+# charlson
+paste0(table.1.ccae.cont[6,2], " [", table.1.ccae.cont[5,2], " to ",  table.1.ccae.cont[7,2], "]"),
+# hopital fraility
+paste0(table.1.ccae.cont[22,2], " [", table.1.ccae.cont[21,2], " to ",  table.1.ccae.cont[23,2], "]")
+))
+
+table.1.ccae.bin$Characteristic<-
+c(paste0(table.1.ccae.bin$Characteristic[1], " (%)"  ),
+ table.1.ccae.bin$Characteristic[2],
+  paste0(table.1.ccae.bin$Characteristic[3:27], " (%)"  ),
+  table.1.ccae.bin$Characteristic[28],
+  paste0(table.1.ccae.bin$Characteristic[29:37], " (%)"  ),
+  table.1.ccae.bin$Characteristic[38],
+  paste0(table.1.ccae.bin$Characteristic[39:46], " (%)"  ),
+  table.1.ccae.bin$Characteristic[47],
+  paste0(table.1.ccae.bin$Characteristic[48:66], " (%)"  ))
+
+
+table.1.ccae<-rbind(table.1.ccae.bin,
+      table.1.ccae.cont)
+rm(table.1.ccae.bin, table.1.ccae.cont)
+
+
+
+
+
+# mdcd
+table.1.mdcd<-read.csv2(unz(
+             file.path(folder.table_1_output,
+             paste0(names[5],"_plots_tables", ".zip")), 
+             "table.1.csv"),
+             col.names=c("Characteristic", "mdcd"),
+             stringsAsFactors = FALSE)
+table.1.mdcd.bin<-table.1.mdcd[1:64,]
+  
+table.1.mdcd.cont<-table.1.mdcd[67:90,]
+#age
+table.1.mdcd.cont<-data.frame(
+Characteristic=c(
+  "Age (median [IQR])",
+  "Charlson score (median [IQR])",
+  "Hospital Frailty Risk Score (median [IQR])"),
+mdcd=c(
+# age
+paste0(table.1.mdcd.cont[14,2], " [", table.1.mdcd.cont[13,2], " to ",  table.1.mdcd.cont[15,2], "]"),
+# charlson
+paste0(table.1.mdcd.cont[6,2], " [", table.1.mdcd.cont[5,2], " to ",  table.1.mdcd.cont[7,2], "]"),
+# hopital fraility
+paste0(table.1.mdcd.cont[22,2], " [", table.1.mdcd.cont[21,2], " to ",  table.1.mdcd.cont[23,2], "]")
+))
+
+table.1.mdcd.bin$Characteristic<-
+c(paste0(table.1.mdcd.bin$Characteristic[1], " (%)"  ),
+ table.1.mdcd.bin$Characteristic[2],
+  paste0(table.1.mdcd.bin$Characteristic[3:27], " (%)"  ),
+  table.1.mdcd.bin$Characteristic[28],
+  paste0(table.1.mdcd.bin$Characteristic[29:37], " (%)"  ),
+  table.1.mdcd.bin$Characteristic[38],
+  paste0(table.1.mdcd.bin$Characteristic[39:44], " (%)"  ),
+  table.1.mdcd.bin$Characteristic[45],
+  paste0(table.1.mdcd.bin$Characteristic[46:64], " (%)"  ))
+
+
+table.1.mdcd<-rbind(table.1.mdcd.bin,
+      table.1.mdcd.cont)
+rm(table.1.mdcd.bin, table.1.mdcd.cont)
+
+
+
+
+
+
+
+
+
+
+# panther
+table.1.panther<-read.csv2(unz(
+             file.path(folder.table_1_output,
+             paste0(names[6],"_plots_tables", ".zip")), 
+             "table.1.csv"),
+             col.names=c("Characteristic", "panther"),
+             stringsAsFactors = FALSE)
+table.1.panther.bin<-table.1.panther[1:66,]
+  
+table.1.panther.cont<-table.1.panther[69:90,]
+#age
+table.1.panther.cont<-data.frame(
+Characteristic=c(
+  "Age (median [IQR])",
+  "Charlson score (median [IQR])",
+  "Hospital Frailty Risk Score (median [IQR])"),
+panther=c(
+# age
+paste0(table.1.panther.cont[14,2], " [", table.1.panther.cont[13,2], " to ",  table.1.panther.cont[15,2], "]"),
+# charlson
+paste0(table.1.panther.cont[6,2], " [", table.1.panther.cont[5,2], " to ",  table.1.panther.cont[7,2], "]"),
+# hopital fraility
+paste0(table.1.panther.cont[22,2], " [", table.1.panther.cont[21,2], " to ",  table.1.panther.cont[23,2], "]")
+))
+
+table.1.panther.bin$Characteristic<-
+c(paste0(table.1.panther.bin$Characteristic[1], " (%)"  ),
+ table.1.panther.bin$Characteristic[2],
+  paste0(table.1.panther.bin$Characteristic[3:27], " (%)"  ),
+  table.1.panther.bin$Characteristic[28],
+  paste0(table.1.panther.bin$Characteristic[29:37], " (%)"  ),
+  table.1.panther.bin$Characteristic[38],
+  paste0(table.1.panther.bin$Characteristic[39:46], " (%)"  ),
+  table.1.panther.bin$Characteristic[47],
+  paste0(table.1.panther.bin$Characteristic[48:66], " (%)"  ))
+
+
+table.1.panther<-rbind(table.1.panther.bin,
+      table.1.panther.cont)
+rm(table.1.panther.bin, table.1.panther.cont)
+
+
+
+
+
+
+
+
+
+# premier
+table.1.premier<-read.csv2(unz(
+             file.path(folder.table_1_output,
+             paste0(names[7],"_plots_tables", ".zip")), 
+             "table.1.csv"),
+             col.names=c("Characteristic", "premier"),
+             stringsAsFactors = FALSE)
+table.1.premier.bin<-table.1.premier[1:64,]
+  
+table.1.premier.cont<-table.1.premier[67:90,]
+#age
+table.1.premier.cont<-data.frame(
+Characteristic=c(
+  "Age (median [IQR])",
+  "Charlson score (median [IQR])",
+  "Hospital Frailty Risk Score (median [IQR])"),
+premier=c(
+# age
+paste0(table.1.premier.cont[14,2], " [", table.1.premier.cont[13,2], " to ",  table.1.premier.cont[15,2], "]"),
+# charlson
+paste0(table.1.premier.cont[6,2], " [", table.1.premier.cont[5,2], " to ",  table.1.premier.cont[7,2], "]"),
+# hopital fraility
+paste0(table.1.premier.cont[22,2], " [", table.1.premier.cont[21,2], " to ",  table.1.premier.cont[23,2], "]")
+))
+
+table.1.premier.bin$Characteristic<-
+c(paste0(table.1.premier.bin$Characteristic[1], " (%)"  ),
+ table.1.premier.bin$Characteristic[2],
+  paste0(table.1.premier.bin$Characteristic[3:27], " (%)"  ),
+  table.1.premier.bin$Characteristic[28],
+  paste0(table.1.premier.bin$Characteristic[29:37], " (%)"  ),
+  table.1.premier.bin$Characteristic[38],
+  paste0(table.1.premier.bin$Characteristic[39:45], " (%)"  ),
+  table.1.premier.bin$Characteristic[46],
+  paste0(table.1.premier.bin$Characteristic[47:64], " (%)"  ))
+
+
+table.1.premier<-rbind(table.1.premier.bin,
+      table.1.premier.cont)
+rm(table.1.premier.bin, table.1.premier.cont)
+
+
+
+
+
+
+
+
 #combine
 
 # some missing...
@@ -326,21 +495,43 @@ rm(table.1.datamaster.bin, table.1.datamaster.cont)
 # table.1.optum %>% 
 # anti_join(table.1.CUIMC,
 #           by="Characteristic")
-
+# table.1.optum %>%
+# anti_join(table.1.ccae,
+#           by="Characteristic")
+# table.1.optum %>%
+# anti_join(table.1.mdcd,
+#           by="Characteristic")
+# table.1.optum %>%
+# anti_join(table.1.panther,
+#           by="Characteristic")
 
 table.1<- table.1.optum %>% 
           inner_join(table.1.datamaster,
               by="Characteristic")
+
 table.1<- table.1 %>% 
           inner_join(table.1.CUIMC,
+              by="Characteristic")
+table.1<- table.1 %>% 
+          inner_join(table.1.ccae,
+              by="Characteristic")
+table.1<- table.1 %>% 
+          inner_join(table.1.mdcd,
+              by="Characteristic")
+table.1<- table.1 %>% 
+          inner_join(table.1.panther,
+              by="Characteristic")
+table.1<- table.1 %>% 
+          inner_join(table.1.premier,
               by="Characteristic")
 
 
 # 
-table.1<-rbind(table.1[56,],
+table.1<-rbind(table.1[55,],
 table.1[1,],
-table.1[57:58,],
-table.1[2:55,])
+table.1[56:57,],
+table.1[2:54,])
+
 
 
 # reduce
@@ -349,15 +540,15 @@ table.1<-table.1 %>%
         c("Age (median [IQR])",
           "Gender: female (%)",
           "Charlson score (median [IQR])",
-          "Hospital Frailty Risk Score (median [IQR])",
-          "Medical history: General",
+        #  "Hospital Frailty Risk Score (median [IQR])",
+       #   "Medical history: General",
           "  Atrial fibrillation (%)",
-          "  Acute respiratory disease (%)",
+        #  "  Acute respiratory disease (%)",
           "  Cerebrovascular disease (%)",
           "  Chronic liver disease (%)",
           "  Chronic obstructive lung disease (%)",
           "  Gastroesophageal reflux disease (%)",
-          "  Gastrointestinal hemorrhage (%)",
+        #  "  Gastrointestinal hemorrhage (%)",
           "  Heart disease (%)",
           "  Heart failure (%)",
           "  Hyperlipidemia (%)",
@@ -371,7 +562,7 @@ table.1<-table.1 %>%
 
 table.1<-table.1 %>% 
   select(Characteristic,
-         CUIMC, optum, datamaster)
+         CUIMC, optum, CCAE,datamaster, mdcd, panther, premier)
 
 table.1<-rbind(
   data.frame(
@@ -388,9 +579,33 @@ optum=as.numeric(read.csv(unz(
   filter(cohort_id==3) %>% 
   filter(rule_name=="No cardiac procedure") %>% 
   select(remain_subjects)),
+CCAE=as.numeric(read.csv(unz(
+             file.path(folder.cohortDiagnostics.results,
+             paste0(names[4], ".zip")), "inclusion_rule_stats.csv")) %>% 
+  filter(cohort_id==3) %>% 
+  filter(rule_name=="No cardiac procedure") %>% 
+  select(remain_subjects)),
 datamaster=as.numeric(read.csv(unz(
              file.path(folder.cohortDiagnostics.results,
              paste0(names[3], ".zip")), "inclusion_rule_stats.csv")) %>% 
+  filter(cohort_id==3) %>% 
+  filter(rule_name=="No cardiac procedure") %>% 
+  select(remain_subjects)),
+mdcd=as.numeric(read.csv(unz(
+             file.path(folder.cohortDiagnostics.results,
+             paste0(names[5], ".zip")), "inclusion_rule_stats.csv")) %>% 
+  filter(cohort_id==3) %>% 
+  filter(rule_name=="No cardiac procedure") %>% 
+  select(remain_subjects)),
+panther=as.numeric(read.csv(unz(
+             file.path(folder.cohortDiagnostics.results,
+             paste0(names[6], ".zip")), "inclusion_rule_stats.csv")) %>% 
+  filter(cohort_id==3) %>% 
+  filter(rule_name=="No cardiac procedure") %>% 
+  select(remain_subjects)),
+premier=as.numeric(read.csv(unz(
+             file.path(folder.cohortDiagnostics.results,
+             paste0(names[7], ".zip")), "inclusion_rule_stats.csv")) %>% 
   filter(cohort_id==3) %>% 
   filter(rule_name=="No cardiac procedure") %>% 
   select(remain_subjects))),
@@ -399,12 +614,4 @@ table.1)
 save(table.1, 
      file = paste0(final.figs_tables, "/table.1.Rdata"))
 
-# Appendix table 1s ----
 
-table.1.CUIMC.age_30.day_comparison<-read.csv2(unz(
-             file.path(folder.table_1_output,
-             paste0(names[1],"_plots_tables", ".zip")), 
-             "table.1.age_30.day_comparison.csv"),
-             col.names=c("Characteristic", "CUIMC_included_ECMO",  "CUIMC_all_ECMO", "SMD"),
-             stringsAsFactors = FALSE)
-table.1.CUIMC.age_30.day_comparison 
