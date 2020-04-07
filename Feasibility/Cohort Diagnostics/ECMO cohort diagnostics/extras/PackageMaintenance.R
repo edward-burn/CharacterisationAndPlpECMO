@@ -25,12 +25,17 @@ shell("R CMD Rd2pdf ./ --output=extras/DiagECMO.pdf")
 
 
 # Insert cohort definitions from ATLAS into package -----------------------
-ROhdsiWebApi::insertCohortDefinitionSetInPackage(fileName = "inst/settings/CohortsToCreate.csv",
-                                                 baseUrl = "http://10.80.192.24:8080/WebAPI",
-                                                 insertTableSql = TRUE,
-                                                 insertCohortCreationR = TRUE,
-                                                 generateStats = TRUE,
-                                                 packageName = "DiagECMO")
+cohortGroups <- read.csv("inst/settings/CohortGroups.csv")
+for (i in 1:nrow(cohortGroups)) {
+  ParallelLogger::logInfo("* Importing cohorts in group: ", cohortGroups$cohortGroup[i], " *")
+  ROhdsiWebApi::insertCohortDefinitionSetInPackage(fileName = file.path("inst", cohortGroups$fileName[i]),
+                                                   baseUrl = Sys.getenv("baseUrl"),
+                                                   insertTableSql = TRUE,
+                                                   insertCohortCreationR = FALSE,
+                                                   generateStats = TRUE,
+                                                   packageName = "DiagECMO")
+}
+unlink("inst/cohorts/InclusionRules.csv")
 
 # Store environment in which the study was executed -----------------------
 OhdsiRTools::insertEnvironmentSnapshotInPackage("DiagECMO")

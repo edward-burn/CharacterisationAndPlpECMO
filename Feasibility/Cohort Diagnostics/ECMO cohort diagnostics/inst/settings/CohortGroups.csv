@@ -1,0 +1,3 @@
+cohortGroup,fileName
+Targets,settings/CohortsToCreateTargets.csv
+Outcomes,settings/CohortsToCreateOutcomes.csv

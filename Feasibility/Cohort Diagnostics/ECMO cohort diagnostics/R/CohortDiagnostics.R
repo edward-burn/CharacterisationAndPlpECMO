@@ -14,6 +14,18 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
+#' Get the list of cohort groups
+#'
+#' @return
+#' A character vector of cohort group names included in this package.
+#' 
+#' @export
+getCohortGroups <- function() {
+  pathToCsv <- system.file("settings", "CohortGroups.csv", package = "DiagECMO")
+  cohortGroups <- readr::read_csv(pathToCsv, col_types = readr::cols())
+  return(cohortGroups$cohortGroup)
+}
+
 #' Execute the cohort diagnostics
 #'
 #' @details
@@ -63,6 +75,7 @@ runCohortDiagnostics <- function(connectionDetails,
                                  databaseId = "Unknown",
                                  databaseName = "Unknown",
                                  databaseDescription = "Unknown",
+                                 cohortGroups = getCohortGroups(),
                                  createCohorts = TRUE,
                                  runInclusionStatistics = TRUE,
                                  runIncludedSourceConcepts = TRUE,
@@ -73,47 +86,83 @@ runCohortDiagnostics <- function(connectionDetails,
                                  runCohortOverlap = TRUE,
                                  runCohortCharacterization = TRUE,
                                  minCellCount = 5) {
-  if (!file.exists(outputFolder))
+  if (!file.exists(outputFolder)){
     dir.create(outputFolder, recursive = TRUE)
+  }
   if (!is.null(getOption("fftempdir")) && !file.exists(getOption("fftempdir"))) {
     warning("fftempdir '", getOption("fftempdir"), "' not found. Attempting to create folder")
     dir.create(getOption("fftempdir"), recursive = TRUE)
   }
-  
   ParallelLogger::addDefaultFileLogger(file.path(outputFolder, "cohortDiagnosticsLog.txt"))
   on.exit(ParallelLogger::unregisterLogger("DEFAULT"))
   
+  pathToCsv <- system.file("settings", "CohortGroups.csv", package = "DiagECMO")
+  temp <- readr::read_csv(pathToCsv, col_types = readr::cols())
+  cohortGroups <- temp[temp$cohortGroup %in% cohortGroups, ]
+  rm(temp)
+  if (nrow(cohortGroups) == 0) {
+    stop("No valid cohort groups seleted") 
+  }
+  cohortGroups$outputFolder <- file.path(outputFolder, cohortGroups$cohortGroup)
+  lapply(cohortGroups$outputFolder[!file.exists(cohortGroups$outputFolder)], dir.create, recursive = TRUE)
+  cohortGroups$incrementalFolder <- file.path(cohortGroups$outputFolder, "RecordKeeping")
+  cohortGroups$inclusionStatisticsFolder <- file.path(cohortGroups$outputFolder, "InclusionStatistics")
+  cohortGroups$exportFolder <- file.path(cohortGroups$outputFolder, "Export")
+  
   if (createCohorts) {
-    ParallelLogger::logInfo("Creating cohorts")
-    connection <- DatabaseConnector::connect(connectionDetails)
-    .createCohorts(connection = connection,
-                   cdmDatabaseSchema = cdmDatabaseSchema,
-                   cohortDatabaseSchema = cohortDatabaseSchema,
-                   cohortTable = cohortTable,
-                   oracleTempSchema = oracleTempSchema,
-                   outputFolder = outputFolder)
-    DatabaseConnector::disconnect(connection)
+    for (i in 1:nrow(cohortGroups)) {
+      ParallelLogger::logInfo("Creating cohorts for cohort group ", cohortGroups$cohortGroup[i])
+      CohortDiagnostics::instantiateCohortSet(connectionDetails = connectionDetails,
+                                              cdmDatabaseSchema = cdmDatabaseSchema,
+                                              cohortDatabaseSchema = cohortDatabaseSchema,
+                                              cohortTable = cohortTable,
+                                              oracleTempSchema = oracleTempSchema,
+                                              packageName = "DiagECMO",
+                                              cohortToCreateFile = cohortGroups$fileName[i],
+                                              createCohortTable = TRUE,
+                                              generateInclusionStats = TRUE,
+                                              inclusionStatisticsFolder = cohortGroups$inclusionStatisticsFolder[i],
+                                              incremental = TRUE,
+                                              incrementalFolder = cohortGroups$incrementalFolder[i])
+      
+    }
   }
   
-  ParallelLogger::logInfo("Running study diagnostics")
-  CohortDiagnostics::runCohortDiagnostics(packageName = "DiagECMO",
-                                          connectionDetails = connectionDetails,
-                                          cdmDatabaseSchema = cdmDatabaseSchema,
-                                          oracleTempSchema = oracleTempSchema,
-                                          cohortDatabaseSchema = cohortDatabaseSchema,
-                                          cohortTable = cohortTable,
-                                          inclusionStatisticsFolder = outputFolder,
-                                          exportFolder = file.path(outputFolder, "diagnosticsExport"),
-                                          databaseId = databaseId,
-                                          databaseName = databaseName,
-                                          databaseDescription = databaseDescription,
-                                          runInclusionStatistics = runInclusionStatistics,
-                                          runIncludedSourceConcepts = runIncludedSourceConcepts,
-                                          runOrphanConcepts = runOrphanConcepts,
-                                          runTimeDistributions = runTimeDistributions,
-                                          runBreakdownIndexEvents = runBreakdownIndexEvents,
-                                          runIncidenceRate = runIncidenceRates,
-                                          runCohortOverlap = runCohortOverlap,
-                                          runCohortCharacterization = runCohortCharacterization,
-                                          minCellCount = minCellCount)
+  for (i in 1:nrow(cohortGroups)) {
+    ParallelLogger::logInfo("Running cohort diagnostics for cohort group", cohortGroups$cohortGroup[i])
+    CohortDiagnostics::runCohortDiagnostics(packageName = "DiagECMO",
+                                            cohortToCreateFile = cohortGroups$fileName[i],
+                                            connectionDetails = connectionDetails,
+                                            cdmDatabaseSchema = cdmDatabaseSchema,
+                                            oracleTempSchema = oracleTempSchema,
+                                            cohortDatabaseSchema = cohortDatabaseSchema,
+                                            cohortTable = cohortTable,
+                                            inclusionStatisticsFolder = cohortGroups$inclusionStatisticsFolder[i],
+                                            exportFolder = cohortGroups$exportFolder[i],
+                                            databaseId = databaseId,
+                                            databaseName = databaseName,
+                                            databaseDescription = databaseDescription,
+                                            runInclusionStatistics = runInclusionStatistics,
+                                            runIncludedSourceConcepts = runIncludedSourceConcepts,
+                                            runOrphanConcepts = runOrphanConcepts,
+                                            runTimeDistributions = runTimeDistributions,
+                                            runBreakdownIndexEvents = runBreakdownIndexEvents,
+                                            runIncidenceRate = runIncidenceRates,
+                                            runCohortOverlap = runCohortOverlap,
+                                            runCohortCharacterization = runCohortCharacterization,
+                                            minCellCount = minCellCount,
+                                            incremental = TRUE,
+                                            incrementalFolder = cohortGroups$incrementalFolder[i])
+  }
+
+  # Combine zip files -------------------------------------------------------------------------------
+  ParallelLogger::logInfo("Combining zip files")
+  zipName <- file.path(outputFolder, paste0("AllResults_", databaseId, ".zip"))
+  files <- list.files(cohortGroups$exportFolder, pattern = ".*\\.zip$", full.names = TRUE)
+  oldWd <- setwd(outputFolder)
+  on.exit(setwd(oldWd), add = TRUE)
+  DatabaseConnector::createZipFile(zipFile = zipName, files = files)
+  ParallelLogger::logInfo("Results are ready for sharing at:", zipName)
+  
+  ParallelLogger::logFatal("Done")
 }
