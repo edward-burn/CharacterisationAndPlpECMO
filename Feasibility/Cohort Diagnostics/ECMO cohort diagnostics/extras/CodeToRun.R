@@ -1,7 +1,8 @@
 
 # make sure you have the following OHDSI packages installed
 # devtools::install_github("OHDSI/DatabaseConnector")
-# devtools::install_github("OHDSI/FeatureExtraction)
+# devtools::install_github("OHDSI/FeatureExtraction")
+# devtools::install_github("OHDSI/ROhdsiWebApi")
 # devtools::install_github("OHDSI/CohortDiagnostics")
 
 # some extra packages are also required for this study
@@ -38,6 +39,9 @@ maxCores <- parallel::detectCores()
 # outputFolder<- 
 
 
+# Selecting the cohort groups to run:
+cohortGroups <- c("Targets", "Outcomes")
+
 # Run the cohorttDiagnostics followed by an extra file for plots and tables 
 #The results will be stored in the diagnosticsExport subfolder of the outputFolder. 
 runCohortDiagnostics(connectionDetails = connectionDetails,
@@ -49,9 +53,10 @@ runCohortDiagnostics(connectionDetails = connectionDetails,
                      databaseId = databaseId,
                      databaseName = databaseName,
                      databaseDescription = databaseDescription,
+        	           cohortGroups = cohortGroups,
                      createCohorts = TRUE,
-                     runInclusionStatistics = TRUE,
-                     runIncludedSourceConcepts = TRUE,
+                     runInclusionStatistics = FALSE,
+                     runIncludedSourceConcepts = FALSE,
                      runOrphanConcepts = FALSE, 
                      runTimeDistributions = TRUE,
                      runBreakdownIndexEvents = TRUE,
