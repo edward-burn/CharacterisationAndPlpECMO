@@ -41,6 +41,7 @@ maxCores <- parallel::detectCores()
 
 # Selecting the cohort groups to run:
 cohortGroups <- c("Targets", "Outcomes")
+#cohortGroups <- c("Outcomes") 
 
 # Run the cohorttDiagnostics followed by an extra file for plots and tables 
 #The results will be stored in the diagnosticsExport subfolder of the outputFolder. 

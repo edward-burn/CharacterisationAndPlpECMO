@@ -1,29 +1,31 @@
 atlasId,atlasName,cohortId,name
-100,ECMO plus pneumonia with Death 180d,100,ECMO plus pneumonia with Death 180d
-101,ECMO plus pneumonia with Death 30d,101,ECMO plus pneumonia with Death 30d
-102,ECMO plus pneumonia with haemorrhage 14d after hospitalization,102,ECMO plus pneumonia with haemorrhage 14d after hospitalization
-103,ECMO plus pneumonia with limb ischemia 14 days after hospitalization,103,ECMO plus pneumonia with limb ischemia 14 days after hospitalization
-104,ECMO plus pneumonia with lower limb amputation 14 days after hospitalization,104,ECMO plus pneumonia with lower limb amputation 14 days after hospitalization
-105,ECMO plus pneumonia with MI 14 days after hospitalization,105,ECMO plus pneumonia with MI 14 days after hospitalization
-106,ECMO plus pneumonia with no haemorrhage 14 days after hospitalization,106,ECMO plus pneumonia with no haemorrhage 14 days after hospitalization
-107,ECMO plus pneumonia with no limb ischemia 14 days after hospitalization,107,ECMO plus pneumonia with no limb ischemia 14 days after hospitalization
-108,ECMO plus pneumonia with no lower limb amputation 14 days after hospitalization,108,ECMO plus pneumonia with no lower limb amputation 14 days after hospitalization
-109,ECMO plus pneumonia with no MI 14 days after hospitalization,109,ECMO plus pneumonia with no MI 14 days after hospitalization
-110,ECMO plus pneumonia with no Stroke 14 days after hospitalization,110,ECMO plus pneumonia with no Stroke 14 days after hospitalization
-111,ECMO plus pneumonia with no VTE 14 days after hospitalization,111,ECMO plus pneumonia with no VTE 14 days after hospitalization
-112,ECMO plus pneumonia with Stroke 14 days after hospitalization,112,ECMO plus pneumonia with Stroke 14 days after hospitalization
-113,ECMO plus pneumonia with VTE 14 days after hospitalization,113,ECMO plus pneumonia with VTE 14 days after hospitalization
-114,ECMO with Death 180d,114,ECMO with Death 180d
-115,ECMO with Death 30d,115,ECMO with Death 30d
-116,ECMO with haemorrhage 14d after hospitalization,116,ECMO with haemorrhage 14d after hospitalization
-117,ECMO with limb ischemia 14 days after hospitalization,117,ECMO with limb ischemia 14 days after hospitalization
-118,ECMO with lower limb amputation 14 days after hospitalization,118,ECMO with lower limb amputation 14 days after hospitalization
-119,ECMO with MI 14 days after hospitalization,119,ECMO with MI 14 days after hospitalization
-120,ECMO with no haemorrhage 14 days after hospitalization,120,ECMO with no haemorrhage 14 days after hospitalization
-121,ECMO with no limb ischemia 14 days after hospitalization,121,ECMO with no limb ischemia 14 days after hospitalization
-122,ECMO with no lower limb amputation 14 days after hospitalization,122,ECMO with no lower limb amputation 14 days after hospitalization
-123,ECMO with no MI 14 days after hospitalization,123,ECMO with no MI 14 days after hospitalization
-124,ECMO with no Stroke 14 days after hospitalization,124,ECMO with no Stroke 14 days after hospitalization
-125,ECMO with no VTE 14 days after hospitalization,125,ECMO with no VTE 14 days after hospitalization
-126,ECMO with Stroke 14 days after hospitalization,126,ECMO with Stroke 14 days after hospitalization
-127,ECMO with VTE 14 days after hospitalization,127,ECMO with VTE 14 days after hospitalization
+100,ECMO plus pneumonia with Death 0-21d,100,ECMO plus pneumonia with Death 0-21d
+101,ECMO plus pneumonia with Death 0-30d,101,ECMO plus pneumonia with Death 0-30d
+102,ECMO plus pneumonia with Death 31-180d,102,ECMO plus pneumonia with Death 31-180d
+103,ECMO plus pneumonia with haemorrhage 21d after hospitalization,103,ECMO plus pneumonia with haemorrhage 21d after hospitalization
+104,ECMO plus pneumonia with limb ischemia 21 days after hospitalization,104,ECMO plus pneumonia with limb ischemia 21 days after hospitalization
+105,ECMO plus pneumonia with lower limb amputation 21 days after hospitalization,105,ECMO plus pneumonia with lower limb amputation 21 days after hospitalization
+106,ECMO plus pneumonia with MI 21 days after hospitalization,106,ECMO plus pneumonia with MI 21 days after hospitalization
+107,ECMO plus pneumonia with no haemorrhage 21 days after hospitalization,107,ECMO plus pneumonia with no haemorrhage 21 days after hospitalization
+108,ECMO plus pneumonia with no limb ischemia 21 days after hospitalization,108,ECMO plus pneumonia with no limb ischemia 21 days after hospitalization
+109,ECMO plus pneumonia with no lower limb amputation 21 days after hospitalization,109,ECMO plus pneumonia with no lower limb amputation 21 days after hospitalization
+110,ECMO plus pneumonia with no MI 21 days after hospitalization,110,ECMO plus pneumonia with no MI 21 days after hospitalization
+111,ECMO plus pneumonia with no Stroke 21 days after hospitalization,111,ECMO plus pneumonia with no Stroke 21 days after hospitalization
+112,ECMO plus pneumonia with no VTE 21 days after hospitalization,112,ECMO plus pneumonia with no VTE 21 days after hospitalization
+113,ECMO plus pneumonia with Stroke 21 days after hospitalization,113,ECMO plus pneumonia with Stroke 21 days after hospitalization
+114,ECMO plus pneumonia with VTE 21 days after hospitalization,114,ECMO plus pneumonia with VTE 21 days after hospitalization
+115,ECMO with Death 0-21d,115,ECMO with Death 0-21d
+116,ECMO with Death 0-30d,116,ECMO with Death 0-30d
+117,ECMO with Death 31-180d,117,ECMO with Death 31-180d
+118,ECMO with haemorrhage 21d after hospitalization,118,ECMO with haemorrhage 21d after hospitalization
+119,ECMO with limb ischemia 21 days after hospitalization,119,ECMO with limb ischemia 21 days after hospitalization
+120,ECMO with lower limb amputation 21 days after hospitalization,120,ECMO with lower limb amputation 21 days after hospitalization
+121,ECMO with MI 21 days after hospitalization,121,ECMO with MI 21 days after hospitalization
+122,ECMO with no haemorrhage 21 days after hospitalization,122,ECMO with no haemorrhage 21 days after hospitalization
+123,ECMO with no limb ischemia 21 days after hospitalization,123,ECMO with no limb ischemia 21 days after hospitalization
+124,ECMO with no lower limb amputation 21 days after hospitalization,124,ECMO with no lower limb amputation 21 days after hospitalization
+125,ECMO with no MI 21 days after hospitalization,125,ECMO with no MI 21 days after hospitalization
+126,ECMO with no Stroke 21 days after hospitalization,126,ECMO with no Stroke 21 days after hospitalization
+127,ECMO with no VTE 21 days after hospitalization,127,ECMO with no VTE 21 days after hospitalization
+128,ECMO with Stroke 21 days after hospitalization,128,ECMO with Stroke 21 days after hospitalization
+129,ECMO with VTE 21 days after hospitalization,129,ECMO with VTE 21 days after hospitalization
