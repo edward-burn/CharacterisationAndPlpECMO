@@ -1,0 +1,34 @@
+"cohortName","ruleSequence","ruleName","cohortId"
+"[EB 27_04] ECMO for ARDS 2014-2019",0,"Aged 18 or older",274
+"[EB 27_04] ECMO for ARDS 2014-2019",1,"has >=30d of prior observation",274
+"[EB 27_04] ECMO for ARDS 2014-2019",2,"ARDS",274
+"[EB 27_04] ECMO for ARDS 2014-2019",3,"No transplant procedure",274
+"[EB 27_04] ECMO for ARDS 2014-2019",4,"No transplant condition",274
+"[EB 27_04] ECMO for ARDS 2014-2019",5,"No lung disease ",274
+"[EB 27_04] ECMO for ARDS 2014-2019",6,"No chest trauma",274
+"[EB 27_04] ECMO for ARDS 2014-2019",7,"No pneumonectomy procedure",274
+"[EB 27_04] ECMO for ARDS 2014-2019",8,"No pneumonectomy condition",274
+"[EB 27_04] ECMO for ARDS 2014-2019",9,"No pulmonary embolism",274
+"[EB 27_04] ECMO for ARDS 2014-2019",10,"No cardiac procedure",274
+"[EB 27_04] ECMO for COVID-19",0,"age >=18",279
+"[EB 27_04] ECMO for COVID-19",1,"has >=30 of prior observation",279
+"[EB 27_04] ECMO for COVID-19",2,"COVID-19",279
+"[EB 27_04] ECMO for COVID-19",3,"No transplant procedure",279
+"[EB 27_04] ECMO for COVID-19",4,"No transplant condition",279
+"[EB 27_04] ECMO for COVID-19",5,"No lung disease ",279
+"[EB 27_04] ECMO for COVID-19",6,"No chest trauma",279
+"[EB 27_04] ECMO for COVID-19",7,"No pneumonectomy procedure",279
+"[EB 27_04] ECMO for COVID-19",8,"No pneumonectomy condition",279
+"[EB 27_04] ECMO for COVID-19",9,"No pulmonary embolism",279
+"[EB 27_04] ECMO for COVID-19",10,"No cardiac procedure",279
+"[EB 27_04] ECMO for COVID-19 [CUIMC]",0,"age >=18",280
+"[EB 27_04] ECMO for COVID-19 [CUIMC]",1,"has >=30d of prior observation",280
+"[EB 27_04] ECMO for COVID-19 [CUIMC]",2,"COVID-19 [CUIMC]",280
+"[EB 27_04] ECMO for COVID-19 [CUIMC]",3,"No transplant procedure",280
+"[EB 27_04] ECMO for COVID-19 [CUIMC]",4,"No transplant condition",280
+"[EB 27_04] ECMO for COVID-19 [CUIMC]",5,"No lung disease ",280
+"[EB 27_04] ECMO for COVID-19 [CUIMC]",6,"No chest trauma",280
+"[EB 27_04] ECMO for COVID-19 [CUIMC]",7,"No pneumonectomy procedure",280
+"[EB 27_04] ECMO for COVID-19 [CUIMC]",8,"No pneumonectomy condition",280
+"[EB 27_04] ECMO for COVID-19 [CUIMC]",9,"No pulmonary embolism",280
+"[EB 27_04] ECMO for COVID-19 [CUIMC]",10,"No cardiac procedure",280

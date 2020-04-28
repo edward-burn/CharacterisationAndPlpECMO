@@ -1,46 +1,45 @@
-# Make sure to install all dependencies (not needed if already done):
-install.packages("SqlRender")
-install.packages("DatabaseConnector")
-install.packages("ggplot2")
-install.packages("ParallelLogger")
-install.packages("readr")
-install.packages("tibble")
-install.packages("dplyr")
-install.packages("RJSONIO")
-install.packages("devtools")
-devtools::install_github("FeatureExtraction")
-devtools::install_github("ROhdsiWebApi")
-devtools::install_github("CohortDiagnostics")
+## Make sure to install all dependencies (not needed if already done):
+# install.packages("SqlRender")
+# install.packages("DatabaseConnector")
+# install.packages("ggplot2")
+# install.packages("ParallelLogger")
+# install.packages("readr")
+# install.packages("tibble")
+# install.packages("dplyr")
+# install.packages("RJSONIO")
+# install.packages("devtools")
+# devtools::install_github("FeatureExtraction")
+# devtools::install_github("ROhdsiWebApi")
+# devtools::install_github("CohortDiagnostics")
 
 
 # Load the package
 library(CovidECMO)
 
 # Optional: specify where the temporary files (used by the ff package) will be created:
-options(fftempdir = "s:/FFtemp")
+#options(fftempdir = "s:/FFtemp")
 
 # Maximum number of cores to be used:
-maxCores <- parallel::detectCores()
+#maxCores <- parallel::detectCores()
 
 
 # Details for connecting to the server:
-connectionDetails <- DatabaseConnector::createConnectionDetails(dbms = "pdw",
-                                                                server = Sys.getenv("PDW_SERVER"),
-                                                                user = NULL,
-                                                                password = NULL,
-                                                                port = Sys.getenv("PDW_PORT"))
+#connectionDetails <- DatabaseConnector::createConnectionDetails()
 
-# For Oracle: define a schema that can be used to emulate temp tables:
-oracleTempSchema <- NULL
+
 
 # Details specific to the database:
-outputFolder <- "s:/CovidECMO/mdcd"
-cdmDatabaseSchema <- "cdm_ibm_mdcd_v1023.dbo"
-cohortDatabaseSchema <- "scratch.dbo"
-cohortTable <- "mschuemi_skeleton_mdcd"
-databaseId <- "MDCD"
-databaseName <- "Truven Health MarketScan® Multi-State Medicaid Database"
-databaseDescription <- "Truven Health MarketScan® Multi-State Medicaid Database (MDCD) adjudicated US health insurance claims for Medicaid enrollees from multiple states and includes hospital discharge diagnoses, outpatient diagnoses and procedures, and outpatient pharmacy claims as well as ethnicity and Medicare eligibility. Members maintain their same identifier even if they leave the system for a brief period however the dataset lacks lab data. [For further information link to RWE site for Truven MDCD."
+# outputFolder <- ""
+# cdmDatabaseSchema <- ""
+# cohortDatabaseSchema <- ""
+# cohortTable <- ""
+# databaseId <- ""
+# databaseName <- ""
+# databaseDescription <-  ""
+
+#oracleTempSchema <- NULL # For Oracle: define a schema that can be used to emulate temp tables:
+
+
 
 # Use this to run the cohorttDiagnostics. The results will be stored in the diagnosticsExport subfolder of the outputFolder. This can be shared between sites.
 runCohortDiagnostics(connectionDetails = connectionDetails,
@@ -54,27 +53,17 @@ runCohortDiagnostics(connectionDetails = connectionDetails,
                      databaseDescription = databaseDescription,
                      createCohorts = TRUE,
                      runInclusionStatistics = TRUE,
-                     runIncludedSourceConcepts = TRUE,
-                     runOrphanConcepts = TRUE,
-                     runTimeDistributions = TRUE,
+                     runIncludedSourceConcepts = FALSE,
+                     runOrphanConcepts = FALSE,
+                     runTimeDistributions = FALSE,
                      runBreakdownIndexEvents = TRUE,
-                     runIncidenceRates = TRUE,
-                     runCohortOverlap = TRUE,
+                     runIncidenceRates = FALSE,
+                     runCohortOverlap = FALSE,
                      runCohortCharacterization = TRUE,
-                     minCellCount = 5)
+                     minCellCount = 10)
 
-# To view the results:
-# Optional: if there are results zip files from multiple sites in a folder, this merges them, which will speed up starting the viewer:
-CohortDiagnostics::preMergeDiagnosticsFiles(file.path(outputFolder, "diagnosticsExport"))
-
-# Use this to view the results. Multiple zip files can be in the same folder. If the files were pre-merged, this is automatically detected: 
-CohortDiagnostics::launchDiagnosticsExplorer(file.path(outputFolder, "diagnosticsExport"))
+# To view the results
+#CohortDiagnostics::launchDiagnosticsExplorer(file.path(outputFolder, "diagnosticsExport"))
 
 
-# To explore a specific cohort in the local database, viewing patient profiles:
-CohortDiagnostics::launchCohortExplorer(connectionDetails = connectionDetails,
-                                        cdmDatabaseSchema = cdmDatabaseSchema,
-                                        cohortDatabaseSchema = cohortDatabaseSchema,
-                                        cohortTable = cohortTable,
-                                        cohortId = 123)
-# Where 123 is the ID of the cohort you wish to inspect.
+

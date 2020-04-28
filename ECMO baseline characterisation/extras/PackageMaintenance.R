@@ -1,6 +1,6 @@
 # Copyright 2019 Observational Health Data Sciences and Informatics
 #
-# This file is part of examplePackage
+# This file is part of CovidECMO
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -16,21 +16,22 @@
 
 # Format and check code ---------------------------------------------------
 OhdsiRTools::formatRFolder()
-OhdsiRTools::checkUsagePackage("examplePackage")
+OhdsiRTools::checkUsagePackage("CovidECMO")
 OhdsiRTools::updateCopyrightYearFolder()
 
 # Create manual -----------------------------------------------------------
-shell("rm extras/examplePackage.pdf")
-shell("R CMD Rd2pdf ./ --output=extras/examplePackage.pdf")
+shell("rm extras/CovidECMO.pdf")
+shell("R CMD Rd2pdf ./ --output=extras/CovidECMO.pdf")
 
 
 # Insert cohort definitions from ATLAS into package -----------------------
 ROhdsiWebApi::insertCohortDefinitionSetInPackage(fileName = "inst/settings/CohortsToCreate.csv",
-                                                 baseUrl = Sys.getenv("ohdsiBaseUrl"),
+                                                 baseUrl = "http://10.80.192.24:8080/WebAPI",
                                                  insertTableSql = TRUE,
                                                  insertCohortCreationR = TRUE,
                                                  generateStats = TRUE,
-                                                 packageName = "examplePackage")
+                                                 packageName = "CovidECMO")
 
+  
 # Store environment in which the study was executed -----------------------
-OhdsiRTools::insertEnvironmentSnapshotInPackage("examplePackage")
+OhdsiRTools::insertEnvironmentSnapshotInPackage("CovidECMO")
