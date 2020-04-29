@@ -7,1390 +7,1375 @@
         "items": [
           {
             "concept": {
+              "CONCEPT_CLASS_ID": "CPT4",
+              "CONCEPT_CODE": "33987",
               "CONCEPT_ID": 46257441,
               "CONCEPT_NAME": "Arterial exposure with creation of graft conduit (eg, chimney graft) to facilitate arterial perfusion for ECMO/ECLS (List separately in addition to code for primary procedure)",
-              "STANDARD_CONCEPT": "S",
-              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "DOMAIN_ID": "Procedure",
               "INVALID_REASON": "V",
               "INVALID_REASON_CAPTION": "Valid",
-              "CONCEPT_CODE": "33987",
-              "DOMAIN_ID": "Procedure",
-              "VOCABULARY_ID": "CPT4",
-              "CONCEPT_CLASS_ID": "CPT4"
+              "STANDARD_CONCEPT": "S",
+              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "VOCABULARY_ID": "CPT4"
             }
           },
           {
             "concept": {
+              "CONCEPT_CLASS_ID": "Procedure",
+              "CONCEPT_CODE": "786452006",
               "CONCEPT_ID": 37206602,
               "CONCEPT_NAME": "Arteriovenous extracorporeal membrane oxygenation",
-              "STANDARD_CONCEPT": "S",
-              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "DOMAIN_ID": "Procedure",
               "INVALID_REASON": "V",
               "INVALID_REASON_CAPTION": "Valid",
-              "CONCEPT_CODE": "786452006",
-              "DOMAIN_ID": "Procedure",
-              "VOCABULARY_ID": "SNOMED",
-              "CONCEPT_CLASS_ID": "Procedure"
+              "STANDARD_CONCEPT": "S",
+              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "VOCABULARY_ID": "SNOMED"
             }
           },
           {
             "concept": {
+              "CONCEPT_CLASS_ID": "Procedure",
+              "CONCEPT_CODE": "232969009",
               "CONCEPT_ID": 4338595,
               "CONCEPT_NAME": "Cardiac support using extracorporeal membrane oxygenation circuitry",
-              "STANDARD_CONCEPT": "S",
-              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "DOMAIN_ID": "Procedure",
               "INVALID_REASON": "V",
               "INVALID_REASON_CAPTION": "Valid",
-              "CONCEPT_CODE": "232969009",
-              "DOMAIN_ID": "Procedure",
-              "VOCABULARY_ID": "SNOMED",
-              "CONCEPT_CLASS_ID": "Procedure"
+              "STANDARD_CONCEPT": "S",
+              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "VOCABULARY_ID": "SNOMED"
             }
           },
           {
             "concept": {
+              "CONCEPT_CLASS_ID": "ICD10PCS Hierarchy",
+              "CONCEPT_CODE": "5A1D6",
               "CONCEPT_ID": 2859609,
               "CONCEPT_NAME": "Extracorporeal Assistance and Performance @ Physiological Systems @ Performance @ Urinary @ Multiple",
-              "STANDARD_CONCEPT_CAPTION": "Unknown",
+              "DOMAIN_ID": "Procedure",
               "INVALID_REASON": "D",
               "INVALID_REASON_CAPTION": "Invalid",
-              "CONCEPT_CODE": "5A1D6",
-              "DOMAIN_ID": "Procedure",
-              "VOCABULARY_ID": "ICD10PCS",
-              "CONCEPT_CLASS_ID": "ICD10PCS Hierarchy"
+              "STANDARD_CONCEPT_CAPTION": "Unknown",
+              "VOCABULARY_ID": "ICD10PCS"
             }
           },
           {
             "concept": {
+              "CONCEPT_CLASS_ID": "ICD10PCS Hierarchy",
+              "CONCEPT_CODE": "5A1D60",
               "CONCEPT_ID": 2841648,
               "CONCEPT_NAME": "Extracorporeal Assistance and Performance @ Physiological Systems @ Performance @ Urinary @ Multiple @ Filtration",
-              "STANDARD_CONCEPT_CAPTION": "Unknown",
+              "DOMAIN_ID": "Procedure",
               "INVALID_REASON": "D",
               "INVALID_REASON_CAPTION": "Invalid",
-              "CONCEPT_CODE": "5A1D60",
-              "DOMAIN_ID": "Procedure",
-              "VOCABULARY_ID": "ICD10PCS",
-              "CONCEPT_CLASS_ID": "ICD10PCS Hierarchy"
+              "STANDARD_CONCEPT_CAPTION": "Unknown",
+              "VOCABULARY_ID": "ICD10PCS"
             }
           },
           {
             "concept": {
+              "CONCEPT_CLASS_ID": "ICD10PCS Hierarchy",
+              "CONCEPT_CODE": "5A1D0",
               "CONCEPT_ID": 2841647,
               "CONCEPT_NAME": "Extracorporeal Assistance and Performance @ Physiological Systems @ Performance @ Urinary @ Single",
-              "STANDARD_CONCEPT_CAPTION": "Unknown",
+              "DOMAIN_ID": "Procedure",
               "INVALID_REASON": "D",
               "INVALID_REASON_CAPTION": "Invalid",
-              "CONCEPT_CODE": "5A1D0",
-              "DOMAIN_ID": "Procedure",
-              "VOCABULARY_ID": "ICD10PCS",
-              "CONCEPT_CLASS_ID": "ICD10PCS Hierarchy"
+              "STANDARD_CONCEPT_CAPTION": "Unknown",
+              "VOCABULARY_ID": "ICD10PCS"
             }
           },
           {
             "concept": {
+              "CONCEPT_CLASS_ID": "ICD10PCS Hierarchy",
+              "CONCEPT_CODE": "5A1D00",
               "CONCEPT_ID": 2872800,
               "CONCEPT_NAME": "Extracorporeal Assistance and Performance @ Physiological Systems @ Performance @ Urinary @ Single @ Filtration",
-              "STANDARD_CONCEPT_CAPTION": "Unknown",
+              "DOMAIN_ID": "Procedure",
               "INVALID_REASON": "D",
               "INVALID_REASON_CAPTION": "Invalid",
-              "CONCEPT_CODE": "5A1D00",
-              "DOMAIN_ID": "Procedure",
-              "VOCABULARY_ID": "ICD10PCS",
-              "CONCEPT_CLASS_ID": "ICD10PCS Hierarchy"
+              "STANDARD_CONCEPT_CAPTION": "Unknown",
+              "VOCABULARY_ID": "ICD10PCS"
             }
           },
           {
             "concept": {
+              "CONCEPT_CLASS_ID": "ICD10PCS",
+              "CONCEPT_CODE": "5A05221",
               "CONCEPT_ID": 2787821,
               "CONCEPT_NAME": "Extracorporeal Hyperbaric Oxygenation, Continuous",
-              "STANDARD_CONCEPT": "S",
-              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "DOMAIN_ID": "Procedure",
               "INVALID_REASON": "V",
               "INVALID_REASON_CAPTION": "Valid",
-              "CONCEPT_CODE": "5A05221",
-              "DOMAIN_ID": "Procedure",
-              "VOCABULARY_ID": "ICD10PCS",
-              "CONCEPT_CLASS_ID": "ICD10PCS"
+              "STANDARD_CONCEPT": "S",
+              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "VOCABULARY_ID": "ICD10PCS"
             }
           },
           {
             "concept": {
+              "CONCEPT_CLASS_ID": "CPT4 Hierarchy",
+              "CONCEPT_CODE": "1021846",
               "CONCEPT_ID": 46257586,
               "CONCEPT_NAME": "Extracorporeal Membrane Oxygenation or Extracorporeal Life Support Services and Procedures",
-              "STANDARD_CONCEPT": "C",
-              "STANDARD_CONCEPT_CAPTION": "Classification",
+              "DOMAIN_ID": "Procedure",
               "INVALID_REASON": "V",
               "INVALID_REASON_CAPTION": "Valid",
-              "CONCEPT_CODE": "1021846",
-              "DOMAIN_ID": "Procedure",
-              "VOCABULARY_ID": "CPT4",
-              "CONCEPT_CLASS_ID": "CPT4 Hierarchy"
+              "STANDARD_CONCEPT": "C",
+              "STANDARD_CONCEPT_CAPTION": "Classification",
+              "VOCABULARY_ID": "CPT4"
             }
           },
           {
             "concept": {
+              "CONCEPT_CLASS_ID": "ICD10PCS",
+              "CONCEPT_CODE": "5A15223",
               "CONCEPT_ID": 2788034,
               "CONCEPT_NAME": "Extracorporeal Membrane Oxygenation, Continuous",
-              "STANDARD_CONCEPT_CAPTION": "Unknown",
+              "DOMAIN_ID": "Procedure",
               "INVALID_REASON": "D",
               "INVALID_REASON_CAPTION": "Invalid",
-              "CONCEPT_CODE": "5A15223",
-              "DOMAIN_ID": "Procedure",
-              "VOCABULARY_ID": "ICD10PCS",
-              "CONCEPT_CLASS_ID": "ICD10PCS"
+              "STANDARD_CONCEPT_CAPTION": "Unknown",
+              "VOCABULARY_ID": "ICD10PCS"
             }
           },
           {
             "concept": {
+              "CONCEPT_CLASS_ID": "ICD10PCS",
+              "CONCEPT_CODE": "5A1522F",
               "CONCEPT_ID": 1531632,
               "CONCEPT_NAME": "Extracorporeal Oxygenation, Membrane, Central",
-              "STANDARD_CONCEPT": "S",
-              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "DOMAIN_ID": "Procedure",
               "INVALID_REASON": "V",
               "INVALID_REASON_CAPTION": "Valid",
-              "CONCEPT_CODE": "5A1522F",
-              "DOMAIN_ID": "Procedure",
-              "VOCABULARY_ID": "ICD10PCS",
-              "CONCEPT_CLASS_ID": "ICD10PCS"
+              "STANDARD_CONCEPT": "S",
+              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "VOCABULARY_ID": "ICD10PCS"
             }
           },
           {
             "concept": {
+              "CONCEPT_CLASS_ID": "ICD10PCS",
+              "CONCEPT_CODE": "5A1522G",
               "CONCEPT_ID": 1531631,
               "CONCEPT_NAME": "Extracorporeal Oxygenation, Membrane, Peripheral Veno-arterial",
-              "STANDARD_CONCEPT": "S",
-              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "DOMAIN_ID": "Procedure",
               "INVALID_REASON": "V",
               "INVALID_REASON_CAPTION": "Valid",
-              "CONCEPT_CODE": "5A1522G",
-              "DOMAIN_ID": "Procedure",
-              "VOCABULARY_ID": "ICD10PCS",
-              "CONCEPT_CLASS_ID": "ICD10PCS"
+              "STANDARD_CONCEPT": "S",
+              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "VOCABULARY_ID": "ICD10PCS"
             }
           },
           {
             "concept": {
+              "CONCEPT_CLASS_ID": "ICD10PCS",
+              "CONCEPT_CODE": "5A1522H",
               "CONCEPT_ID": 1531630,
               "CONCEPT_NAME": "Extracorporeal Oxygenation, Membrane, Peripheral Veno-venous",
-              "STANDARD_CONCEPT": "S",
-              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "DOMAIN_ID": "Procedure",
               "INVALID_REASON": "V",
               "INVALID_REASON_CAPTION": "Valid",
-              "CONCEPT_CODE": "5A1522H",
-              "DOMAIN_ID": "Procedure",
-              "VOCABULARY_ID": "ICD10PCS",
-              "CONCEPT_CLASS_ID": "ICD10PCS"
+              "STANDARD_CONCEPT": "S",
+              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "VOCABULARY_ID": "ICD10PCS"
             }
           },
           {
             "concept": {
+              "CONCEPT_CLASS_ID": "ICD10PCS",
+              "CONCEPT_CODE": "5A0512C",
               "CONCEPT_ID": 2787820,
               "CONCEPT_NAME": "Extracorporeal Supersaturated Oxygenation, Intermittent",
-              "STANDARD_CONCEPT": "S",
-              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "DOMAIN_ID": "Procedure",
               "INVALID_REASON": "V",
               "INVALID_REASON_CAPTION": "Valid",
-              "CONCEPT_CODE": "5A0512C",
-              "DOMAIN_ID": "Procedure",
-              "VOCABULARY_ID": "ICD10PCS",
-              "CONCEPT_CLASS_ID": "ICD10PCS"
+              "STANDARD_CONCEPT": "S",
+              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "VOCABULARY_ID": "ICD10PCS"
             }
           },
           {
             "concept": {
+              "CONCEPT_CLASS_ID": "Procedure",
+              "CONCEPT_CODE": "233573008",
               "CONCEPT_ID": 4052536,
               "CONCEPT_NAME": "Extracorporeal membrane oxygenation",
-              "STANDARD_CONCEPT": "S",
-              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "DOMAIN_ID": "Procedure",
               "INVALID_REASON": "V",
               "INVALID_REASON_CAPTION": "Valid",
-              "CONCEPT_CODE": "233573008",
-              "DOMAIN_ID": "Procedure",
-              "VOCABULARY_ID": "SNOMED",
-              "CONCEPT_CLASS_ID": "Procedure"
+              "STANDARD_CONCEPT": "S",
+              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "VOCABULARY_ID": "SNOMED"
             }
           },
           {
             "concept": {
+              "CONCEPT_CLASS_ID": "Procedure",
+              "CONCEPT_CODE": "X58.1",
               "CONCEPT_ID": 44515635,
               "CONCEPT_NAME": "Extracorporeal membrane oxygenation",
-              "STANDARD_CONCEPT_CAPTION": "Unknown",
+              "DOMAIN_ID": "Procedure",
               "INVALID_REASON": "V",
               "INVALID_REASON_CAPTION": "Valid",
-              "CONCEPT_CODE": "X58.1",
-              "DOMAIN_ID": "Procedure",
-              "VOCABULARY_ID": "OPCS4",
-              "CONCEPT_CLASS_ID": "Procedure"
+              "STANDARD_CONCEPT_CAPTION": "Unknown",
+              "VOCABULARY_ID": "OPCS4"
             }
           },
           {
             "concept": {
+              "CONCEPT_CLASS_ID": "Procedure",
+              "CONCEPT_CODE": "180904009",
               "CONCEPT_ID": 40379806,
               "CONCEPT_NAME": "Extracorporeal membrane oxygenation",
-              "STANDARD_CONCEPT_CAPTION": "Unknown",
+              "DOMAIN_ID": "Procedure",
               "INVALID_REASON": "U",
               "INVALID_REASON_CAPTION": "Invalid",
-              "CONCEPT_CODE": "180904009",
-              "DOMAIN_ID": "Procedure",
-              "VOCABULARY_ID": "SNOMED",
-              "CONCEPT_CLASS_ID": "Procedure"
+              "STANDARD_CONCEPT_CAPTION": "Unknown",
+              "VOCABULARY_ID": "SNOMED"
             }
           },
           {
             "concept": {
+              "CONCEPT_CLASS_ID": "CPT4 Hierarchy",
+              "CONCEPT_CODE": "1022227",
               "CONCEPT_ID": 46257585,
               "CONCEPT_NAME": "Extracorporeal membrane oxygenation (ECMO)/extracorporeal life support (ECLS) provided by physician",
+              "DOMAIN_ID": "Procedure",
+              "INVALID_REASON": "V",
+              "INVALID_REASON_CAPTION": "Valid",
               "STANDARD_CONCEPT": "C",
               "STANDARD_CONCEPT_CAPTION": "Classification",
-              "INVALID_REASON": "V",
-              "INVALID_REASON_CAPTION": "Valid",
-              "CONCEPT_CODE": "1022227",
-              "DOMAIN_ID": "Procedure",
-              "VOCABULARY_ID": "CPT4",
-              "CONCEPT_CLASS_ID": "CPT4 Hierarchy"
+              "VOCABULARY_ID": "CPT4"
             }
           },
           {
             "concept": {
+              "CONCEPT_CLASS_ID": "CPT4",
+              "CONCEPT_CODE": "33949",
               "CONCEPT_ID": 46257511,
               "CONCEPT_NAME": "Extracorporeal membrane oxygenation (ECMO)/extracorporeal life support (ECLS) provided by physician; daily management, each day, veno-arterial",
-              "STANDARD_CONCEPT": "S",
-              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "DOMAIN_ID": "Procedure",
               "INVALID_REASON": "V",
               "INVALID_REASON_CAPTION": "Valid",
-              "CONCEPT_CODE": "33949",
-              "DOMAIN_ID": "Procedure",
-              "VOCABULARY_ID": "CPT4",
-              "CONCEPT_CLASS_ID": "CPT4"
+              "STANDARD_CONCEPT": "S",
+              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "VOCABULARY_ID": "CPT4"
             }
           },
           {
             "concept": {
+              "CONCEPT_CLASS_ID": "CPT4",
+              "CONCEPT_CODE": "33948",
               "CONCEPT_ID": 46257510,
               "CONCEPT_NAME": "Extracorporeal membrane oxygenation (ECMO)/extracorporeal life support (ECLS) provided by physician; daily management, each day, veno-venous",
-              "STANDARD_CONCEPT": "S",
-              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "DOMAIN_ID": "Procedure",
               "INVALID_REASON": "V",
               "INVALID_REASON_CAPTION": "Valid",
-              "CONCEPT_CODE": "33948",
-              "DOMAIN_ID": "Procedure",
-              "VOCABULARY_ID": "CPT4",
-              "CONCEPT_CLASS_ID": "CPT4"
+              "STANDARD_CONCEPT": "S",
+              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "VOCABULARY_ID": "CPT4"
             }
           },
           {
             "concept": {
+              "CONCEPT_CLASS_ID": "CPT4",
+              "CONCEPT_CODE": "33947",
               "CONCEPT_ID": 46257682,
               "CONCEPT_NAME": "Extracorporeal membrane oxygenation (ECMO)/extracorporeal life support (ECLS) provided by physician; initiation, veno-arterial",
-              "STANDARD_CONCEPT": "S",
-              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "DOMAIN_ID": "Procedure",
               "INVALID_REASON": "V",
               "INVALID_REASON_CAPTION": "Valid",
-              "CONCEPT_CODE": "33947",
-              "DOMAIN_ID": "Procedure",
-              "VOCABULARY_ID": "CPT4",
-              "CONCEPT_CLASS_ID": "CPT4"
+              "STANDARD_CONCEPT": "S",
+              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "VOCABULARY_ID": "CPT4"
             }
           },
           {
             "concept": {
+              "CONCEPT_CLASS_ID": "CPT4",
+              "CONCEPT_CODE": "33946",
               "CONCEPT_ID": 46257543,
               "CONCEPT_NAME": "Extracorporeal membrane oxygenation (ECMO)/extracorporeal life support (ECLS) provided by physician; initiation, veno-venous",
-              "STANDARD_CONCEPT": "S",
-              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "DOMAIN_ID": "Procedure",
               "INVALID_REASON": "V",
               "INVALID_REASON_CAPTION": "Valid",
-              "CONCEPT_CODE": "33946",
-              "DOMAIN_ID": "Procedure",
-              "VOCABULARY_ID": "CPT4",
-              "CONCEPT_CLASS_ID": "CPT4"
+              "STANDARD_CONCEPT": "S",
+              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "VOCABULARY_ID": "CPT4"
             }
           },
           {
             "concept": {
+              "CONCEPT_CLASS_ID": "CPT4",
+              "CONCEPT_CODE": "33956",
               "CONCEPT_ID": 46257398,
               "CONCEPT_NAME": "Extracorporeal membrane oxygenation (ECMO)/extracorporeal life support (ECLS) provided by physician; insertion of central cannula(e) by sternotomy or thoracotomy, 6 years and older",
-              "STANDARD_CONCEPT": "S",
-              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "DOMAIN_ID": "Procedure",
               "INVALID_REASON": "V",
               "INVALID_REASON_CAPTION": "Valid",
-              "CONCEPT_CODE": "33956",
-              "DOMAIN_ID": "Procedure",
-              "VOCABULARY_ID": "CPT4",
-              "CONCEPT_CLASS_ID": "CPT4"
+              "STANDARD_CONCEPT": "S",
+              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "VOCABULARY_ID": "CPT4"
             }
           },
           {
             "concept": {
+              "CONCEPT_CLASS_ID": "CPT4",
+              "CONCEPT_CODE": "33954",
               "CONCEPT_ID": 46257438,
               "CONCEPT_NAME": "Extracorporeal membrane oxygenation (ECMO)/extracorporeal life support (ECLS) provided by physician; insertion of peripheral (arterial and/or venous) cannula(e), open, 6 years and older",
-              "STANDARD_CONCEPT": "S",
-              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "DOMAIN_ID": "Procedure",
               "INVALID_REASON": "V",
               "INVALID_REASON_CAPTION": "Valid",
-              "CONCEPT_CODE": "33954",
-              "DOMAIN_ID": "Procedure",
-              "VOCABULARY_ID": "CPT4",
-              "CONCEPT_CLASS_ID": "CPT4"
+              "STANDARD_CONCEPT": "S",
+              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "VOCABULARY_ID": "CPT4"
             }
           },
           {
             "concept": {
+              "CONCEPT_CLASS_ID": "CPT4",
+              "CONCEPT_CODE": "33952",
               "CONCEPT_ID": 46257466,
               "CONCEPT_NAME": "Extracorporeal membrane oxygenation (ECMO)/extracorporeal life support (ECLS) provided by physician; insertion of peripheral (arterial and/or venous) cannula(e), percutaneous, 6 years and older (includes fluoroscopic guidance, when performed)",
-              "STANDARD_CONCEPT": "S",
-              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "DOMAIN_ID": "Procedure",
               "INVALID_REASON": "V",
               "INVALID_REASON_CAPTION": "Valid",
-              "CONCEPT_CODE": "33952",
-              "DOMAIN_ID": "Procedure",
-              "VOCABULARY_ID": "CPT4",
-              "CONCEPT_CLASS_ID": "CPT4"
+              "STANDARD_CONCEPT": "S",
+              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "VOCABULARY_ID": "CPT4"
             }
           },
           {
             "concept": {
+              "CONCEPT_CLASS_ID": "CPT4",
+              "CONCEPT_CODE": "33986",
               "CONCEPT_ID": 46257680,
               "CONCEPT_NAME": "Extracorporeal membrane oxygenation (ECMO)/extracorporeal life support (ECLS) provided by physician; removal of central cannula(e) by sternotomy or thoracotomy, 6 years and older",
-              "STANDARD_CONCEPT": "S",
-              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "DOMAIN_ID": "Procedure",
               "INVALID_REASON": "V",
               "INVALID_REASON_CAPTION": "Valid",
-              "CONCEPT_CODE": "33986",
-              "DOMAIN_ID": "Procedure",
-              "VOCABULARY_ID": "CPT4",
-              "CONCEPT_CLASS_ID": "CPT4"
+              "STANDARD_CONCEPT": "S",
+              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "VOCABULARY_ID": "CPT4"
             }
           },
           {
             "concept": {
+              "CONCEPT_CLASS_ID": "CPT4",
+              "CONCEPT_CODE": "33984",
               "CONCEPT_ID": 46257399,
               "CONCEPT_NAME": "Extracorporeal membrane oxygenation (ECMO)/extracorporeal life support (ECLS) provided by physician; removal of peripheral (arterial and/or venous) cannula(e), open, 6 years and older",
-              "STANDARD_CONCEPT": "S",
-              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "DOMAIN_ID": "Procedure",
               "INVALID_REASON": "V",
               "INVALID_REASON_CAPTION": "Valid",
-              "CONCEPT_CODE": "33984",
-              "DOMAIN_ID": "Procedure",
-              "VOCABULARY_ID": "CPT4",
-              "CONCEPT_CLASS_ID": "CPT4"
+              "STANDARD_CONCEPT": "S",
+              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "VOCABULARY_ID": "CPT4"
             }
           },
           {
             "concept": {
+              "CONCEPT_CLASS_ID": "CPT4",
+              "CONCEPT_CODE": "33966",
               "CONCEPT_ID": 46257468,
               "CONCEPT_NAME": "Extracorporeal membrane oxygenation (ECMO)/extracorporeal life support (ECLS) provided by physician; removal of peripheral (arterial and/or venous) cannula(e), percutaneous, 6 years and older",
-              "STANDARD_CONCEPT": "S",
-              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "DOMAIN_ID": "Procedure",
               "INVALID_REASON": "V",
               "INVALID_REASON_CAPTION": "Valid",
-              "CONCEPT_CODE": "33966",
-              "DOMAIN_ID": "Procedure",
-              "VOCABULARY_ID": "CPT4",
-              "CONCEPT_CLASS_ID": "CPT4"
+              "STANDARD_CONCEPT": "S",
+              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "VOCABULARY_ID": "CPT4"
             }
           },
           {
             "concept": {
+              "CONCEPT_CLASS_ID": "CPT4",
+              "CONCEPT_CODE": "33964",
               "CONCEPT_ID": 46257440,
               "CONCEPT_NAME": "Extracorporeal membrane oxygenation (ECMO)/extracorporeal life support (ECLS) provided by physician; reposition central cannula(e) by sternotomy or thoracotomy, 6 years and older (includes fluoroscopic guidance, when performed)",
-              "STANDARD_CONCEPT": "S",
-              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "DOMAIN_ID": "Procedure",
               "INVALID_REASON": "V",
               "INVALID_REASON_CAPTION": "Valid",
-              "CONCEPT_CODE": "33964",
-              "DOMAIN_ID": "Procedure",
-              "VOCABULARY_ID": "CPT4",
-              "CONCEPT_CLASS_ID": "CPT4"
+              "STANDARD_CONCEPT": "S",
+              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "VOCABULARY_ID": "CPT4"
             }
           },
           {
             "concept": {
+              "CONCEPT_CLASS_ID": "CPT4",
+              "CONCEPT_CODE": "33962",
               "CONCEPT_ID": 46257684,
               "CONCEPT_NAME": "Extracorporeal membrane oxygenation (ECMO)/extracorporeal life support (ECLS) provided by physician; reposition peripheral (arterial and/or venous) cannula(e), open, 6 years and older (includes fluoroscopic guidance, when performed)",
-              "STANDARD_CONCEPT": "S",
-              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "DOMAIN_ID": "Procedure",
               "INVALID_REASON": "V",
               "INVALID_REASON_CAPTION": "Valid",
-              "CONCEPT_CODE": "33962",
-              "DOMAIN_ID": "Procedure",
-              "VOCABULARY_ID": "CPT4",
-              "CONCEPT_CLASS_ID": "CPT4"
+              "STANDARD_CONCEPT": "S",
+              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "VOCABULARY_ID": "CPT4"
             }
           },
           {
             "concept": {
+              "CONCEPT_CLASS_ID": "CPT4",
+              "CONCEPT_CODE": "33958",
               "CONCEPT_ID": 46257467,
               "CONCEPT_NAME": "Extracorporeal membrane oxygenation (ECMO)/extracorporeal life support (ECLS) provided by physician; reposition peripheral (arterial and/or venous) cannula(e), percutaneous, 6 years and older (includes fluoroscopic guidance, when performed)",
-              "STANDARD_CONCEPT": "S",
-              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "DOMAIN_ID": "Procedure",
               "INVALID_REASON": "V",
               "INVALID_REASON_CAPTION": "Valid",
-              "CONCEPT_CODE": "33958",
-              "DOMAIN_ID": "Procedure",
-              "VOCABULARY_ID": "CPT4",
-              "CONCEPT_CLASS_ID": "CPT4"
+              "STANDARD_CONCEPT": "S",
+              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "VOCABULARY_ID": "CPT4"
             }
           },
           {
             "concept": {
+              "CONCEPT_CLASS_ID": "4-dig billing code",
+              "CONCEPT_CODE": "39.65",
               "CONCEPT_ID": 2002247,
               "CONCEPT_NAME": "Extracorporeal membrane oxygenation [ECMO]",
-              "STANDARD_CONCEPT_CAPTION": "Unknown",
+              "DOMAIN_ID": "Procedure",
               "INVALID_REASON": "V",
               "INVALID_REASON_CAPTION": "Valid",
-              "CONCEPT_CODE": "39.65",
-              "DOMAIN_ID": "Procedure",
-              "VOCABULARY_ID": "ICD9Proc",
-              "CONCEPT_CLASS_ID": "4-dig billing code"
+              "STANDARD_CONCEPT_CAPTION": "Unknown",
+              "VOCABULARY_ID": "ICD9Proc"
             }
           },
           {
             "concept": {
+              "CONCEPT_CLASS_ID": "ICD10PCS Hierarchy",
+              "CONCEPT_CODE": "5",
               "CONCEPT_ID": 2893763,
               "CONCEPT_NAME": "Extracorporeal or Systemic Assistance and Performance (Procedure)",
-              "STANDARD_CONCEPT": "S",
-              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "DOMAIN_ID": "Procedure",
               "INVALID_REASON": "V",
               "INVALID_REASON_CAPTION": "Valid",
-              "CONCEPT_CODE": "5",
-              "DOMAIN_ID": "Procedure",
-              "VOCABULARY_ID": "ICD10PCS",
-              "CONCEPT_CLASS_ID": "ICD10PCS Hierarchy"
+              "STANDARD_CONCEPT": "S",
+              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "VOCABULARY_ID": "ICD10PCS"
             }
           },
           {
             "concept": {
+              "CONCEPT_CLASS_ID": "ICD10PCS Hierarchy",
+              "CONCEPT_CODE": "5A",
               "CONCEPT_ID": 2805869,
               "CONCEPT_NAME": "Extracorporeal or Systemic Assistance and Performance @ Physiological Systems (Procedure)",
-              "STANDARD_CONCEPT": "S",
-              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "DOMAIN_ID": "Procedure",
               "INVALID_REASON": "V",
               "INVALID_REASON_CAPTION": "Valid",
-              "CONCEPT_CODE": "5A",
-              "DOMAIN_ID": "Procedure",
-              "VOCABULARY_ID": "ICD10PCS",
-              "CONCEPT_CLASS_ID": "ICD10PCS Hierarchy"
+              "STANDARD_CONCEPT": "S",
+              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "VOCABULARY_ID": "ICD10PCS"
             }
           },
           {
             "concept": {
+              "CONCEPT_CLASS_ID": "ICD10PCS Hierarchy",
+              "CONCEPT_CODE": "5A02",
               "CONCEPT_ID": 2800857,
               "CONCEPT_NAME": "Extracorporeal or Systemic Assistance and Performance @ Physiological Systems @ Assistance @ Cardiac",
-              "STANDARD_CONCEPT": "S",
-              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "DOMAIN_ID": "Procedure",
               "INVALID_REASON": "V",
               "INVALID_REASON_CAPTION": "Valid",
-              "CONCEPT_CODE": "5A02",
-              "DOMAIN_ID": "Procedure",
-              "VOCABULARY_ID": "ICD10PCS",
-              "CONCEPT_CLASS_ID": "ICD10PCS Hierarchy"
+              "STANDARD_CONCEPT": "S",
+              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "VOCABULARY_ID": "ICD10PCS"
             }
           },
           {
             "concept": {
+              "CONCEPT_CLASS_ID": "ICD10PCS Hierarchy",
+              "CONCEPT_CODE": "5A022",
               "CONCEPT_ID": 2813707,
               "CONCEPT_NAME": "Extracorporeal or Systemic Assistance and Performance @ Physiological Systems @ Assistance @ Cardiac @ Continuous",
-              "STANDARD_CONCEPT": "S",
-              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "DOMAIN_ID": "Procedure",
               "INVALID_REASON": "V",
               "INVALID_REASON_CAPTION": "Valid",
-              "CONCEPT_CODE": "5A022",
-              "DOMAIN_ID": "Procedure",
-              "VOCABULARY_ID": "ICD10PCS",
-              "CONCEPT_CLASS_ID": "ICD10PCS Hierarchy"
+              "STANDARD_CONCEPT": "S",
+              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "VOCABULARY_ID": "ICD10PCS"
             }
           },
           {
             "concept": {
+              "CONCEPT_CLASS_ID": "ICD10PCS Hierarchy",
+              "CONCEPT_CODE": "5A0221",
               "CONCEPT_ID": 2872796,
               "CONCEPT_NAME": "Extracorporeal or Systemic Assistance and Performance @ Physiological Systems @ Assistance @ Cardiac @ Continuous @ Output",
-              "STANDARD_CONCEPT": "S",
-              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "DOMAIN_ID": "Procedure",
               "INVALID_REASON": "V",
               "INVALID_REASON_CAPTION": "Valid",
-              "CONCEPT_CODE": "5A0221",
-              "DOMAIN_ID": "Procedure",
-              "VOCABULARY_ID": "ICD10PCS",
-              "CONCEPT_CLASS_ID": "ICD10PCS Hierarchy"
+              "STANDARD_CONCEPT": "S",
+              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "VOCABULARY_ID": "ICD10PCS"
             }
           },
           {
             "concept": {
+              "CONCEPT_CLASS_ID": "ICD10PCS Hierarchy",
+              "CONCEPT_CODE": "5A021",
               "CONCEPT_ID": 2880730,
               "CONCEPT_NAME": "Extracorporeal or Systemic Assistance and Performance @ Physiological Systems @ Assistance @ Cardiac @ Intermittent",
-              "STANDARD_CONCEPT": "S",
-              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "DOMAIN_ID": "Procedure",
               "INVALID_REASON": "V",
               "INVALID_REASON_CAPTION": "Valid",
-              "CONCEPT_CODE": "5A021",
-              "DOMAIN_ID": "Procedure",
-              "VOCABULARY_ID": "ICD10PCS",
-              "CONCEPT_CLASS_ID": "ICD10PCS Hierarchy"
+              "STANDARD_CONCEPT": "S",
+              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "VOCABULARY_ID": "ICD10PCS"
             }
           },
           {
             "concept": {
+              "CONCEPT_CLASS_ID": "ICD10PCS Hierarchy",
+              "CONCEPT_CODE": "5A0211",
               "CONCEPT_ID": 2813706,
               "CONCEPT_NAME": "Extracorporeal or Systemic Assistance and Performance @ Physiological Systems @ Assistance @ Cardiac @ Intermittent @ Output",
-              "STANDARD_CONCEPT": "S",
-              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "DOMAIN_ID": "Procedure",
               "INVALID_REASON": "V",
               "INVALID_REASON_CAPTION": "Valid",
-              "CONCEPT_CODE": "5A0211",
-              "DOMAIN_ID": "Procedure",
-              "VOCABULARY_ID": "ICD10PCS",
-              "CONCEPT_CLASS_ID": "ICD10PCS Hierarchy"
+              "STANDARD_CONCEPT": "S",
+              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "VOCABULARY_ID": "ICD10PCS"
             }
           },
           {
             "concept": {
+              "CONCEPT_CLASS_ID": "ICD10PCS Hierarchy",
+              "CONCEPT_CODE": "5A05",
               "CONCEPT_ID": 2813708,
               "CONCEPT_NAME": "Extracorporeal or Systemic Assistance and Performance @ Physiological Systems @ Assistance @ Circulatory",
-              "STANDARD_CONCEPT": "S",
-              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "DOMAIN_ID": "Procedure",
               "INVALID_REASON": "V",
               "INVALID_REASON_CAPTION": "Valid",
-              "CONCEPT_CODE": "5A05",
-              "DOMAIN_ID": "Procedure",
-              "VOCABULARY_ID": "ICD10PCS",
-              "CONCEPT_CLASS_ID": "ICD10PCS Hierarchy"
+              "STANDARD_CONCEPT": "S",
+              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "VOCABULARY_ID": "ICD10PCS"
             }
           },
           {
             "concept": {
+              "CONCEPT_CLASS_ID": "ICD10PCS Hierarchy",
+              "CONCEPT_CODE": "5A052",
               "CONCEPT_ID": 2813709,
               "CONCEPT_NAME": "Extracorporeal or Systemic Assistance and Performance @ Physiological Systems @ Assistance @ Circulatory @ Continuous",
-              "STANDARD_CONCEPT": "S",
-              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "DOMAIN_ID": "Procedure",
               "INVALID_REASON": "V",
               "INVALID_REASON_CAPTION": "Valid",
-              "CONCEPT_CODE": "5A052",
-              "DOMAIN_ID": "Procedure",
-              "VOCABULARY_ID": "ICD10PCS",
-              "CONCEPT_CLASS_ID": "ICD10PCS Hierarchy"
+              "STANDARD_CONCEPT": "S",
+              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "VOCABULARY_ID": "ICD10PCS"
             }
           },
           {
             "concept": {
+              "CONCEPT_CLASS_ID": "ICD10PCS Hierarchy",
+              "CONCEPT_CODE": "5A0522",
               "CONCEPT_ID": 2818370,
               "CONCEPT_NAME": "Extracorporeal or Systemic Assistance and Performance @ Physiological Systems @ Assistance @ Circulatory @ Continuous @ Oxygenation",
-              "STANDARD_CONCEPT": "S",
-              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "DOMAIN_ID": "Procedure",
               "INVALID_REASON": "V",
               "INVALID_REASON_CAPTION": "Valid",
-              "CONCEPT_CODE": "5A0522",
-              "DOMAIN_ID": "Procedure",
-              "VOCABULARY_ID": "ICD10PCS",
-              "CONCEPT_CLASS_ID": "ICD10PCS Hierarchy"
+              "STANDARD_CONCEPT": "S",
+              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "VOCABULARY_ID": "ICD10PCS"
             }
           },
           {
             "concept": {
+              "CONCEPT_CLASS_ID": "ICD10PCS Hierarchy",
+              "CONCEPT_CODE": "5A051",
               "CONCEPT_ID": 2899635,
               "CONCEPT_NAME": "Extracorporeal or Systemic Assistance and Performance @ Physiological Systems @ Assistance @ Circulatory @ Intermittent",
-              "STANDARD_CONCEPT": "S",
-              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "DOMAIN_ID": "Procedure",
               "INVALID_REASON": "V",
               "INVALID_REASON_CAPTION": "Valid",
-              "CONCEPT_CODE": "5A051",
-              "DOMAIN_ID": "Procedure",
-              "VOCABULARY_ID": "ICD10PCS",
-              "CONCEPT_CLASS_ID": "ICD10PCS Hierarchy"
+              "STANDARD_CONCEPT": "S",
+              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "VOCABULARY_ID": "ICD10PCS"
             }
           },
           {
             "concept": {
+              "CONCEPT_CLASS_ID": "ICD10PCS Hierarchy",
+              "CONCEPT_CODE": "5A0512",
               "CONCEPT_ID": 2880858,
               "CONCEPT_NAME": "Extracorporeal or Systemic Assistance and Performance @ Physiological Systems @ Assistance @ Circulatory @ Intermittent @ Oxygenation",
-              "STANDARD_CONCEPT": "S",
-              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "DOMAIN_ID": "Procedure",
               "INVALID_REASON": "V",
               "INVALID_REASON_CAPTION": "Valid",
-              "CONCEPT_CODE": "5A0512",
-              "DOMAIN_ID": "Procedure",
-              "VOCABULARY_ID": "ICD10PCS",
-              "CONCEPT_CLASS_ID": "ICD10PCS Hierarchy"
+              "STANDARD_CONCEPT": "S",
+              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "VOCABULARY_ID": "ICD10PCS"
             }
           },
           {
             "concept": {
+              "CONCEPT_CLASS_ID": "ICD10PCS Hierarchy",
+              "CONCEPT_CODE": "5A09",
               "CONCEPT_ID": 2853950,
               "CONCEPT_NAME": "Extracorporeal or Systemic Assistance and Performance @ Physiological Systems @ Assistance @ Respiratory",
-              "STANDARD_CONCEPT": "S",
-              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "DOMAIN_ID": "Procedure",
               "INVALID_REASON": "V",
               "INVALID_REASON_CAPTION": "Valid",
-              "CONCEPT_CODE": "5A09",
-              "DOMAIN_ID": "Procedure",
-              "VOCABULARY_ID": "ICD10PCS",
-              "CONCEPT_CLASS_ID": "ICD10PCS Hierarchy"
+              "STANDARD_CONCEPT": "S",
+              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "VOCABULARY_ID": "ICD10PCS"
             }
           },
           {
             "concept": {
+              "CONCEPT_CLASS_ID": "ICD10PCS Hierarchy",
+              "CONCEPT_CODE": "5A094",
               "CONCEPT_ID": 2899636,
               "CONCEPT_NAME": "Extracorporeal or Systemic Assistance and Performance @ Physiological Systems @ Assistance @ Respiratory @ 24-96 Consecutive Hours",
-              "STANDARD_CONCEPT": "S",
-              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "DOMAIN_ID": "Procedure",
               "INVALID_REASON": "V",
               "INVALID_REASON_CAPTION": "Valid",
-              "CONCEPT_CODE": "5A094",
-              "DOMAIN_ID": "Procedure",
-              "VOCABULARY_ID": "ICD10PCS",
-              "CONCEPT_CLASS_ID": "ICD10PCS Hierarchy"
+              "STANDARD_CONCEPT": "S",
+              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "VOCABULARY_ID": "ICD10PCS"
             }
           },
           {
             "concept": {
+              "CONCEPT_CLASS_ID": "ICD10PCS Hierarchy",
+              "CONCEPT_CODE": "5A0945",
               "CONCEPT_ID": 2867784,
               "CONCEPT_NAME": "Extracorporeal or Systemic Assistance and Performance @ Physiological Systems @ Assistance @ Respiratory @ 24-96 Consecutive Hours @ Ventilation",
-              "STANDARD_CONCEPT": "S",
-              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "DOMAIN_ID": "Procedure",
               "INVALID_REASON": "V",
               "INVALID_REASON_CAPTION": "Valid",
-              "CONCEPT_CODE": "5A0945",
-              "DOMAIN_ID": "Procedure",
-              "VOCABULARY_ID": "ICD10PCS",
-              "CONCEPT_CLASS_ID": "ICD10PCS Hierarchy"
+              "STANDARD_CONCEPT": "S",
+              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "VOCABULARY_ID": "ICD10PCS"
             }
           },
           {
             "concept": {
+              "CONCEPT_CLASS_ID": "ICD10PCS Hierarchy",
+              "CONCEPT_CODE": "5A092",
               "CONCEPT_ID": 1532675,
               "CONCEPT_NAME": "Extracorporeal or Systemic Assistance and Performance @ Physiological Systems @ Assistance @ Respiratory @ Continuous",
-              "STANDARD_CONCEPT": "S",
-              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "DOMAIN_ID": "Procedure",
               "INVALID_REASON": "V",
               "INVALID_REASON_CAPTION": "Valid",
-              "CONCEPT_CODE": "5A092",
-              "DOMAIN_ID": "Procedure",
-              "VOCABULARY_ID": "ICD10PCS",
-              "CONCEPT_CLASS_ID": "ICD10PCS Hierarchy"
+              "STANDARD_CONCEPT": "S",
+              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "VOCABULARY_ID": "ICD10PCS"
             }
           },
           {
             "concept": {
+              "CONCEPT_CLASS_ID": "ICD10PCS Hierarchy",
+              "CONCEPT_CODE": "5A0920",
               "CONCEPT_ID": 1535225,
               "CONCEPT_NAME": "Extracorporeal or Systemic Assistance and Performance @ Physiological Systems @ Assistance @ Respiratory @ Continuous @ Filtration",
-              "STANDARD_CONCEPT": "S",
-              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "DOMAIN_ID": "Procedure",
               "INVALID_REASON": "V",
               "INVALID_REASON_CAPTION": "Valid",
-              "CONCEPT_CODE": "5A0920",
-              "DOMAIN_ID": "Procedure",
-              "VOCABULARY_ID": "ICD10PCS",
-              "CONCEPT_CLASS_ID": "ICD10PCS Hierarchy"
+              "STANDARD_CONCEPT": "S",
+              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "VOCABULARY_ID": "ICD10PCS"
             }
           },
           {
             "concept": {
+              "CONCEPT_CLASS_ID": "ICD10PCS Hierarchy",
+              "CONCEPT_CODE": "5A095",
               "CONCEPT_ID": 2800858,
               "CONCEPT_NAME": "Extracorporeal or Systemic Assistance and Performance @ Physiological Systems @ Assistance @ Respiratory @ Greater than 96 Consecutive Hours",
-              "STANDARD_CONCEPT": "S",
-              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "DOMAIN_ID": "Procedure",
               "INVALID_REASON": "V",
               "INVALID_REASON_CAPTION": "Valid",
-              "CONCEPT_CODE": "5A095",
-              "DOMAIN_ID": "Procedure",
-              "VOCABULARY_ID": "ICD10PCS",
-              "CONCEPT_CLASS_ID": "ICD10PCS Hierarchy"
+              "STANDARD_CONCEPT": "S",
+              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "VOCABULARY_ID": "ICD10PCS"
             }
           },
           {
             "concept": {
+              "CONCEPT_CLASS_ID": "ICD10PCS Hierarchy",
+              "CONCEPT_CODE": "5A0955",
               "CONCEPT_ID": 2813710,
               "CONCEPT_NAME": "Extracorporeal or Systemic Assistance and Performance @ Physiological Systems @ Assistance @ Respiratory @ Greater than 96 Consecutive Hours @ Ventilation",
-              "STANDARD_CONCEPT": "S",
-              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "DOMAIN_ID": "Procedure",
               "INVALID_REASON": "V",
               "INVALID_REASON_CAPTION": "Valid",
-              "CONCEPT_CODE": "5A0955",
-              "DOMAIN_ID": "Procedure",
-              "VOCABULARY_ID": "ICD10PCS",
-              "CONCEPT_CLASS_ID": "ICD10PCS Hierarchy"
+              "STANDARD_CONCEPT": "S",
+              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "VOCABULARY_ID": "ICD10PCS"
             }
           },
           {
             "concept": {
+              "CONCEPT_CLASS_ID": "ICD10PCS Hierarchy",
+              "CONCEPT_CODE": "5A093",
               "CONCEPT_ID": 2872797,
               "CONCEPT_NAME": "Extracorporeal or Systemic Assistance and Performance @ Physiological Systems @ Assistance @ Respiratory @ Less than 24 Consecutive Hours",
-              "STANDARD_CONCEPT": "S",
-              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "DOMAIN_ID": "Procedure",
               "INVALID_REASON": "V",
               "INVALID_REASON_CAPTION": "Valid",
-              "CONCEPT_CODE": "5A093",
-              "DOMAIN_ID": "Procedure",
-              "VOCABULARY_ID": "ICD10PCS",
-              "CONCEPT_CLASS_ID": "ICD10PCS Hierarchy"
+              "STANDARD_CONCEPT": "S",
+              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "VOCABULARY_ID": "ICD10PCS"
             }
           },
           {
             "concept": {
+              "CONCEPT_CLASS_ID": "ICD10PCS Hierarchy",
+              "CONCEPT_CODE": "5A0935",
               "CONCEPT_ID": 2805870,
               "CONCEPT_NAME": "Extracorporeal or Systemic Assistance and Performance @ Physiological Systems @ Assistance @ Respiratory @ Less than 24 Consecutive Hours @ Ventilation",
-              "STANDARD_CONCEPT": "S",
-              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "DOMAIN_ID": "Procedure",
               "INVALID_REASON": "V",
               "INVALID_REASON_CAPTION": "Valid",
-              "CONCEPT_CODE": "5A0935",
-              "DOMAIN_ID": "Procedure",
-              "VOCABULARY_ID": "ICD10PCS",
-              "CONCEPT_CLASS_ID": "ICD10PCS Hierarchy"
+              "STANDARD_CONCEPT": "S",
+              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "VOCABULARY_ID": "ICD10PCS"
             }
           },
           {
             "concept": {
+              "CONCEPT_CLASS_ID": "ICD10PCS Hierarchy",
+              "CONCEPT_CODE": "5A1C",
               "CONCEPT_ID": 2853952,
               "CONCEPT_NAME": "Extracorporeal or Systemic Assistance and Performance @ Physiological Systems @ Performance @ Biliary",
-              "STANDARD_CONCEPT": "S",
-              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "DOMAIN_ID": "Procedure",
               "INVALID_REASON": "V",
               "INVALID_REASON_CAPTION": "Valid",
-              "CONCEPT_CODE": "5A1C",
-              "DOMAIN_ID": "Procedure",
-              "VOCABULARY_ID": "ICD10PCS",
-              "CONCEPT_CLASS_ID": "ICD10PCS Hierarchy"
+              "STANDARD_CONCEPT": "S",
+              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "VOCABULARY_ID": "ICD10PCS"
             }
           },
           {
             "concept": {
+              "CONCEPT_CLASS_ID": "ICD10PCS Hierarchy",
+              "CONCEPT_CODE": "5A1C6",
               "CONCEPT_ID": 2859607,
               "CONCEPT_NAME": "Extracorporeal or Systemic Assistance and Performance @ Physiological Systems @ Performance @ Biliary @ Multiple",
-              "STANDARD_CONCEPT": "S",
-              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "DOMAIN_ID": "Procedure",
               "INVALID_REASON": "V",
               "INVALID_REASON_CAPTION": "Valid",
-              "CONCEPT_CODE": "5A1C6",
-              "DOMAIN_ID": "Procedure",
-              "VOCABULARY_ID": "ICD10PCS",
-              "CONCEPT_CLASS_ID": "ICD10PCS Hierarchy"
+              "STANDARD_CONCEPT": "S",
+              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "VOCABULARY_ID": "ICD10PCS"
             }
           },
           {
             "concept": {
+              "CONCEPT_CLASS_ID": "ICD10PCS Hierarchy",
+              "CONCEPT_CODE": "5A1C60",
               "CONCEPT_ID": 2841646,
               "CONCEPT_NAME": "Extracorporeal or Systemic Assistance and Performance @ Physiological Systems @ Performance @ Biliary @ Multiple @ Filtration",
-              "STANDARD_CONCEPT": "S",
-              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "DOMAIN_ID": "Procedure",
               "INVALID_REASON": "V",
               "INVALID_REASON_CAPTION": "Valid",
-              "CONCEPT_CODE": "5A1C60",
-              "DOMAIN_ID": "Procedure",
-              "VOCABULARY_ID": "ICD10PCS",
-              "CONCEPT_CLASS_ID": "ICD10PCS Hierarchy"
+              "STANDARD_CONCEPT": "S",
+              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "VOCABULARY_ID": "ICD10PCS"
             }
           },
           {
             "concept": {
+              "CONCEPT_CLASS_ID": "ICD10PCS Hierarchy",
+              "CONCEPT_CODE": "5A1C0",
               "CONCEPT_ID": 2834016,
               "CONCEPT_NAME": "Extracorporeal or Systemic Assistance and Performance @ Physiological Systems @ Performance @ Biliary @ Single",
-              "STANDARD_CONCEPT": "S",
-              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "DOMAIN_ID": "Procedure",
               "INVALID_REASON": "V",
               "INVALID_REASON_CAPTION": "Valid",
-              "CONCEPT_CODE": "5A1C0",
-              "DOMAIN_ID": "Procedure",
-              "VOCABULARY_ID": "ICD10PCS",
-              "CONCEPT_CLASS_ID": "ICD10PCS Hierarchy"
+              "STANDARD_CONCEPT": "S",
+              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "VOCABULARY_ID": "ICD10PCS"
             }
           },
           {
             "concept": {
+              "CONCEPT_CLASS_ID": "ICD10PCS Hierarchy",
+              "CONCEPT_CODE": "5A1C00",
               "CONCEPT_ID": 2853953,
               "CONCEPT_NAME": "Extracorporeal or Systemic Assistance and Performance @ Physiological Systems @ Performance @ Biliary @ Single @ Filtration",
-              "STANDARD_CONCEPT": "S",
-              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "DOMAIN_ID": "Procedure",
               "INVALID_REASON": "V",
               "INVALID_REASON_CAPTION": "Valid",
-              "CONCEPT_CODE": "5A1C00",
-              "DOMAIN_ID": "Procedure",
-              "VOCABULARY_ID": "ICD10PCS",
-              "CONCEPT_CLASS_ID": "ICD10PCS Hierarchy"
+              "STANDARD_CONCEPT": "S",
+              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "VOCABULARY_ID": "ICD10PCS"
             }
           },
           {
             "concept": {
+              "CONCEPT_CLASS_ID": "ICD10PCS Hierarchy",
+              "CONCEPT_CODE": "5A12",
               "CONCEPT_ID": 2872798,
               "CONCEPT_NAME": "Extracorporeal or Systemic Assistance and Performance @ Physiological Systems @ Performance @ Cardiac",
-              "STANDARD_CONCEPT": "S",
-              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "DOMAIN_ID": "Procedure",
               "INVALID_REASON": "V",
               "INVALID_REASON_CAPTION": "Valid",
-              "CONCEPT_CODE": "5A12",
-              "DOMAIN_ID": "Procedure",
-              "VOCABULARY_ID": "ICD10PCS",
-              "CONCEPT_CLASS_ID": "ICD10PCS Hierarchy"
+              "STANDARD_CONCEPT": "S",
+              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "VOCABULARY_ID": "ICD10PCS"
             }
           },
           {
             "concept": {
+              "CONCEPT_CLASS_ID": "ICD10PCS Hierarchy",
+              "CONCEPT_CODE": "5A122",
               "CONCEPT_ID": 2867785,
               "CONCEPT_NAME": "Extracorporeal or Systemic Assistance and Performance @ Physiological Systems @ Performance @ Cardiac @ Continuous",
-              "STANDARD_CONCEPT": "S",
-              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "DOMAIN_ID": "Procedure",
               "INVALID_REASON": "V",
               "INVALID_REASON_CAPTION": "Valid",
-              "CONCEPT_CODE": "5A122",
-              "DOMAIN_ID": "Procedure",
-              "VOCABULARY_ID": "ICD10PCS",
-              "CONCEPT_CLASS_ID": "ICD10PCS Hierarchy"
+              "STANDARD_CONCEPT": "S",
+              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "VOCABULARY_ID": "ICD10PCS"
             }
           },
           {
             "concept": {
+              "CONCEPT_CLASS_ID": "ICD10PCS Hierarchy",
+              "CONCEPT_CODE": "5A1221",
               "CONCEPT_ID": 2880859,
               "CONCEPT_NAME": "Extracorporeal or Systemic Assistance and Performance @ Physiological Systems @ Performance @ Cardiac @ Continuous @ Output",
-              "STANDARD_CONCEPT": "S",
-              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "DOMAIN_ID": "Procedure",
               "INVALID_REASON": "V",
               "INVALID_REASON_CAPTION": "Valid",
-              "CONCEPT_CODE": "5A1221",
-              "DOMAIN_ID": "Procedure",
-              "VOCABULARY_ID": "ICD10PCS",
-              "CONCEPT_CLASS_ID": "ICD10PCS Hierarchy"
+              "STANDARD_CONCEPT": "S",
+              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "VOCABULARY_ID": "ICD10PCS"
             }
           },
           {
             "concept": {
+              "CONCEPT_CLASS_ID": "ICD10PCS Hierarchy",
+              "CONCEPT_CODE": "5A1223",
               "CONCEPT_ID": 2893765,
               "CONCEPT_NAME": "Extracorporeal or Systemic Assistance and Performance @ Physiological Systems @ Performance @ Cardiac @ Continuous @ Pacing",
-              "STANDARD_CONCEPT": "S",
-              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "DOMAIN_ID": "Procedure",
               "INVALID_REASON": "V",
               "INVALID_REASON_CAPTION": "Valid",
-              "CONCEPT_CODE": "5A1223",
-              "DOMAIN_ID": "Procedure",
-              "VOCABULARY_ID": "ICD10PCS",
-              "CONCEPT_CLASS_ID": "ICD10PCS Hierarchy"
+              "STANDARD_CONCEPT": "S",
+              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "VOCABULARY_ID": "ICD10PCS"
             }
           },
           {
             "concept": {
+              "CONCEPT_CLASS_ID": "ICD10PCS Hierarchy",
+              "CONCEPT_CODE": "5A121",
               "CONCEPT_ID": 2826305,
               "CONCEPT_NAME": "Extracorporeal or Systemic Assistance and Performance @ Physiological Systems @ Performance @ Cardiac @ Intermittent",
-              "STANDARD_CONCEPT": "S",
-              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "DOMAIN_ID": "Procedure",
               "INVALID_REASON": "V",
               "INVALID_REASON_CAPTION": "Valid",
-              "CONCEPT_CODE": "5A121",
-              "DOMAIN_ID": "Procedure",
-              "VOCABULARY_ID": "ICD10PCS",
-              "CONCEPT_CLASS_ID": "ICD10PCS Hierarchy"
+              "STANDARD_CONCEPT": "S",
+              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "VOCABULARY_ID": "ICD10PCS"
             }
           },
           {
             "concept": {
+              "CONCEPT_CLASS_ID": "ICD10PCS Hierarchy",
+              "CONCEPT_CODE": "5A1213",
               "CONCEPT_ID": 2826306,
               "CONCEPT_NAME": "Extracorporeal or Systemic Assistance and Performance @ Physiological Systems @ Performance @ Cardiac @ Intermittent @ Pacing",
-              "STANDARD_CONCEPT": "S",
-              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "DOMAIN_ID": "Procedure",
               "INVALID_REASON": "V",
               "INVALID_REASON_CAPTION": "Valid",
-              "CONCEPT_CODE": "5A1213",
-              "DOMAIN_ID": "Procedure",
-              "VOCABULARY_ID": "ICD10PCS",
-              "CONCEPT_CLASS_ID": "ICD10PCS Hierarchy"
+              "STANDARD_CONCEPT": "S",
+              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "VOCABULARY_ID": "ICD10PCS"
             }
           },
           {
             "concept": {
+              "CONCEPT_CLASS_ID": "ICD10PCS Hierarchy",
+              "CONCEPT_CODE": "5A120",
               "CONCEPT_ID": 2859605,
               "CONCEPT_NAME": "Extracorporeal or Systemic Assistance and Performance @ Physiological Systems @ Performance @ Cardiac @ Single",
-              "STANDARD_CONCEPT": "S",
-              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "DOMAIN_ID": "Procedure",
               "INVALID_REASON": "V",
               "INVALID_REASON_CAPTION": "Valid",
-              "CONCEPT_CODE": "5A120",
-              "DOMAIN_ID": "Procedure",
-              "VOCABULARY_ID": "ICD10PCS",
-              "CONCEPT_CLASS_ID": "ICD10PCS Hierarchy"
+              "STANDARD_CONCEPT": "S",
+              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "VOCABULARY_ID": "ICD10PCS"
             }
           },
           {
             "concept": {
+              "CONCEPT_CLASS_ID": "ICD10PCS Hierarchy",
+              "CONCEPT_CODE": "5A1201",
               "CONCEPT_ID": 2893764,
               "CONCEPT_NAME": "Extracorporeal or Systemic Assistance and Performance @ Physiological Systems @ Performance @ Cardiac @ Single @ Output",
-              "STANDARD_CONCEPT": "S",
-              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "DOMAIN_ID": "Procedure",
               "INVALID_REASON": "V",
               "INVALID_REASON_CAPTION": "Valid",
-              "CONCEPT_CODE": "5A1201",
-              "DOMAIN_ID": "Procedure",
-              "VOCABULARY_ID": "ICD10PCS",
-              "CONCEPT_CLASS_ID": "ICD10PCS Hierarchy"
+              "STANDARD_CONCEPT": "S",
+              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "VOCABULARY_ID": "ICD10PCS"
             }
           },
           {
             "concept": {
+              "CONCEPT_CLASS_ID": "ICD10PCS Hierarchy",
+              "CONCEPT_CODE": "5A15",
               "CONCEPT_ID": 2899637,
               "CONCEPT_NAME": "Extracorporeal or Systemic Assistance and Performance @ Physiological Systems @ Performance @ Circulatory",
-              "STANDARD_CONCEPT": "S",
-              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "DOMAIN_ID": "Procedure",
               "INVALID_REASON": "V",
               "INVALID_REASON_CAPTION": "Valid",
-              "CONCEPT_CODE": "5A15",
-              "DOMAIN_ID": "Procedure",
-              "VOCABULARY_ID": "ICD10PCS",
-              "CONCEPT_CLASS_ID": "ICD10PCS Hierarchy"
+              "STANDARD_CONCEPT": "S",
+              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "VOCABULARY_ID": "ICD10PCS"
             }
           },
           {
             "concept": {
+              "CONCEPT_CLASS_ID": "ICD10PCS Hierarchy",
+              "CONCEPT_CODE": "5A152",
               "CONCEPT_ID": 2872799,
               "CONCEPT_NAME": "Extracorporeal or Systemic Assistance and Performance @ Physiological Systems @ Performance @ Circulatory @ Continuous",
-              "STANDARD_CONCEPT": "S",
-              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "DOMAIN_ID": "Procedure",
               "INVALID_REASON": "V",
               "INVALID_REASON_CAPTION": "Valid",
-              "CONCEPT_CODE": "5A152",
-              "DOMAIN_ID": "Procedure",
-              "VOCABULARY_ID": "ICD10PCS",
-              "CONCEPT_CLASS_ID": "ICD10PCS Hierarchy"
+              "STANDARD_CONCEPT": "S",
+              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "VOCABULARY_ID": "ICD10PCS"
             }
           },
           {
             "concept": {
+              "CONCEPT_CLASS_ID": "ICD10PCS Hierarchy",
+              "CONCEPT_CODE": "5A1522",
               "CONCEPT_ID": 2826307,
               "CONCEPT_NAME": "Extracorporeal or Systemic Assistance and Performance @ Physiological Systems @ Performance @ Circulatory @ Continuous @ Oxygenation",
-              "STANDARD_CONCEPT": "S",
-              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "DOMAIN_ID": "Procedure",
               "INVALID_REASON": "V",
               "INVALID_REASON_CAPTION": "Valid",
-              "CONCEPT_CODE": "5A1522",
-              "DOMAIN_ID": "Procedure",
-              "VOCABULARY_ID": "ICD10PCS",
-              "CONCEPT_CLASS_ID": "ICD10PCS Hierarchy"
+              "STANDARD_CONCEPT": "S",
+              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "VOCABULARY_ID": "ICD10PCS"
             }
           },
           {
             "concept": {
+              "CONCEPT_CLASS_ID": "ICD10PCS Hierarchy",
+              "CONCEPT_CODE": "5A19",
               "CONCEPT_ID": 2841644,
               "CONCEPT_NAME": "Extracorporeal or Systemic Assistance and Performance @ Physiological Systems @ Performance @ Respiratory",
-              "STANDARD_CONCEPT": "S",
-              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "DOMAIN_ID": "Procedure",
               "INVALID_REASON": "V",
               "INVALID_REASON_CAPTION": "Valid",
-              "CONCEPT_CODE": "5A19",
-              "DOMAIN_ID": "Procedure",
-              "VOCABULARY_ID": "ICD10PCS",
-              "CONCEPT_CLASS_ID": "ICD10PCS Hierarchy"
+              "STANDARD_CONCEPT": "S",
+              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "VOCABULARY_ID": "ICD10PCS"
             }
           },
           {
             "concept": {
+              "CONCEPT_CLASS_ID": "ICD10PCS Hierarchy",
+              "CONCEPT_CODE": "5A194",
               "CONCEPT_ID": 2867786,
               "CONCEPT_NAME": "Extracorporeal or Systemic Assistance and Performance @ Physiological Systems @ Performance @ Respiratory @ 24-96 Consecutive Hours",
-              "STANDARD_CONCEPT": "S",
-              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "DOMAIN_ID": "Procedure",
               "INVALID_REASON": "V",
               "INVALID_REASON_CAPTION": "Valid",
-              "CONCEPT_CODE": "5A194",
-              "DOMAIN_ID": "Procedure",
-              "VOCABULARY_ID": "ICD10PCS",
-              "CONCEPT_CLASS_ID": "ICD10PCS Hierarchy"
+              "STANDARD_CONCEPT": "S",
+              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "VOCABULARY_ID": "ICD10PCS"
             }
           },
           {
             "concept": {
+              "CONCEPT_CLASS_ID": "ICD10PCS Hierarchy",
+              "CONCEPT_CODE": "5A1945",
               "CONCEPT_ID": 2800859,
               "CONCEPT_NAME": "Extracorporeal or Systemic Assistance and Performance @ Physiological Systems @ Performance @ Respiratory @ 24-96 Consecutive Hours @ Ventilation",
-              "STANDARD_CONCEPT": "S",
-              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "DOMAIN_ID": "Procedure",
               "INVALID_REASON": "V",
               "INVALID_REASON_CAPTION": "Valid",
-              "CONCEPT_CODE": "5A1945",
-              "DOMAIN_ID": "Procedure",
-              "VOCABULARY_ID": "ICD10PCS",
-              "CONCEPT_CLASS_ID": "ICD10PCS Hierarchy"
+              "STANDARD_CONCEPT": "S",
+              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "VOCABULARY_ID": "ICD10PCS"
             }
           },
           {
             "concept": {
+              "CONCEPT_CLASS_ID": "ICD10PCS Hierarchy",
+              "CONCEPT_CODE": "5A195",
               "CONCEPT_ID": 2853951,
               "CONCEPT_NAME": "Extracorporeal or Systemic Assistance and Performance @ Physiological Systems @ Performance @ Respiratory @ Greater than 96 Consecutive Hours",
-              "STANDARD_CONCEPT": "S",
-              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "DOMAIN_ID": "Procedure",
               "INVALID_REASON": "V",
               "INVALID_REASON_CAPTION": "Valid",
-              "CONCEPT_CODE": "5A195",
-              "DOMAIN_ID": "Procedure",
-              "VOCABULARY_ID": "ICD10PCS",
-              "CONCEPT_CLASS_ID": "ICD10PCS Hierarchy"
+              "STANDARD_CONCEPT": "S",
+              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "VOCABULARY_ID": "ICD10PCS"
             }
           },
           {
             "concept": {
+              "CONCEPT_CLASS_ID": "ICD10PCS Hierarchy",
+              "CONCEPT_CODE": "5A1955",
               "CONCEPT_ID": 2834015,
               "CONCEPT_NAME": "Extracorporeal or Systemic Assistance and Performance @ Physiological Systems @ Performance @ Respiratory @ Greater than 96 Consecutive Hours @ Ventilation",
-              "STANDARD_CONCEPT": "S",
-              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "DOMAIN_ID": "Procedure",
               "INVALID_REASON": "V",
               "INVALID_REASON_CAPTION": "Valid",
-              "CONCEPT_CODE": "5A1955",
-              "DOMAIN_ID": "Procedure",
-              "VOCABULARY_ID": "ICD10PCS",
-              "CONCEPT_CLASS_ID": "ICD10PCS Hierarchy"
+              "STANDARD_CONCEPT": "S",
+              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "VOCABULARY_ID": "ICD10PCS"
             }
           },
           {
             "concept": {
+              "CONCEPT_CLASS_ID": "ICD10PCS Hierarchy",
+              "CONCEPT_CODE": "5A193",
               "CONCEPT_ID": 2841645,
               "CONCEPT_NAME": "Extracorporeal or Systemic Assistance and Performance @ Physiological Systems @ Performance @ Respiratory @ Less than 24 Consecutive Hours",
-              "STANDARD_CONCEPT": "S",
-              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "DOMAIN_ID": "Procedure",
               "INVALID_REASON": "V",
               "INVALID_REASON_CAPTION": "Valid",
-              "CONCEPT_CODE": "5A193",
-              "DOMAIN_ID": "Procedure",
-              "VOCABULARY_ID": "ICD10PCS",
-              "CONCEPT_CLASS_ID": "ICD10PCS Hierarchy"
+              "STANDARD_CONCEPT": "S",
+              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "VOCABULARY_ID": "ICD10PCS"
             }
           },
           {
             "concept": {
+              "CONCEPT_CLASS_ID": "ICD10PCS Hierarchy",
+              "CONCEPT_CODE": "5A1935",
               "CONCEPT_ID": 2893766,
               "CONCEPT_NAME": "Extracorporeal or Systemic Assistance and Performance @ Physiological Systems @ Performance @ Respiratory @ Less than 24 Consecutive Hours @ Ventilation",
-              "STANDARD_CONCEPT": "S",
-              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "DOMAIN_ID": "Procedure",
               "INVALID_REASON": "V",
               "INVALID_REASON_CAPTION": "Valid",
-              "CONCEPT_CODE": "5A1935",
-              "DOMAIN_ID": "Procedure",
-              "VOCABULARY_ID": "ICD10PCS",
-              "CONCEPT_CLASS_ID": "ICD10PCS Hierarchy"
+              "STANDARD_CONCEPT": "S",
+              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "VOCABULARY_ID": "ICD10PCS"
             }
           },
           {
             "concept": {
+              "CONCEPT_CLASS_ID": "ICD10PCS Hierarchy",
+              "CONCEPT_CODE": "5A190",
               "CONCEPT_ID": 2859606,
               "CONCEPT_NAME": "Extracorporeal or Systemic Assistance and Performance @ Physiological Systems @ Performance @ Respiratory @ Single",
-              "STANDARD_CONCEPT": "S",
-              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "DOMAIN_ID": "Procedure",
               "INVALID_REASON": "V",
               "INVALID_REASON_CAPTION": "Valid",
-              "CONCEPT_CODE": "5A190",
-              "DOMAIN_ID": "Procedure",
-              "VOCABULARY_ID": "ICD10PCS",
-              "CONCEPT_CLASS_ID": "ICD10PCS Hierarchy"
+              "STANDARD_CONCEPT": "S",
+              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "VOCABULARY_ID": "ICD10PCS"
             }
           },
           {
             "concept": {
+              "CONCEPT_CLASS_ID": "ICD10PCS Hierarchy",
+              "CONCEPT_CODE": "5A1905",
               "CONCEPT_ID": 2886050,
               "CONCEPT_NAME": "Extracorporeal or Systemic Assistance and Performance @ Physiological Systems @ Performance @ Respiratory @ Single @ Ventilation",
-              "STANDARD_CONCEPT": "S",
-              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "DOMAIN_ID": "Procedure",
               "INVALID_REASON": "V",
               "INVALID_REASON_CAPTION": "Valid",
-              "CONCEPT_CODE": "5A1905",
-              "DOMAIN_ID": "Procedure",
-              "VOCABULARY_ID": "ICD10PCS",
-              "CONCEPT_CLASS_ID": "ICD10PCS Hierarchy"
+              "STANDARD_CONCEPT": "S",
+              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "VOCABULARY_ID": "ICD10PCS"
             }
           },
           {
             "concept": {
+              "CONCEPT_CLASS_ID": "ICD10PCS Hierarchy",
+              "CONCEPT_CODE": "5A1D",
               "CONCEPT_ID": 2859608,
               "CONCEPT_NAME": "Extracorporeal or Systemic Assistance and Performance @ Physiological Systems @ Performance @ Urinary",
-              "STANDARD_CONCEPT": "S",
-              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "DOMAIN_ID": "Procedure",
               "INVALID_REASON": "V",
               "INVALID_REASON_CAPTION": "Valid",
-              "CONCEPT_CODE": "5A1D",
-              "DOMAIN_ID": "Procedure",
-              "VOCABULARY_ID": "ICD10PCS",
-              "CONCEPT_CLASS_ID": "ICD10PCS Hierarchy"
+              "STANDARD_CONCEPT": "S",
+              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "VOCABULARY_ID": "ICD10PCS"
             }
           },
           {
             "concept": {
+              "CONCEPT_CLASS_ID": "ICD10PCS Hierarchy",
+              "CONCEPT_CODE": "5A1D9",
               "CONCEPT_ID": 1532287,
               "CONCEPT_NAME": "Extracorporeal or Systemic Assistance and Performance @ Physiological Systems @ Performance @ Urinary @ Continuous, Greater than 18 hours Per Day",
-              "STANDARD_CONCEPT": "S",
-              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "DOMAIN_ID": "Procedure",
               "INVALID_REASON": "V",
               "INVALID_REASON_CAPTION": "Valid",
-              "CONCEPT_CODE": "5A1D9",
-              "DOMAIN_ID": "Procedure",
-              "VOCABULARY_ID": "ICD10PCS",
-              "CONCEPT_CLASS_ID": "ICD10PCS Hierarchy"
+              "STANDARD_CONCEPT": "S",
+              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "VOCABULARY_ID": "ICD10PCS"
             }
           },
           {
             "concept": {
+              "CONCEPT_CLASS_ID": "ICD10PCS Hierarchy",
+              "CONCEPT_CODE": "5A1D90",
               "CONCEPT_ID": 1533108,
               "CONCEPT_NAME": "Extracorporeal or Systemic Assistance and Performance @ Physiological Systems @ Performance @ Urinary @ Continuous, Greater than 18 hours Per Day @ Filtration",
-              "STANDARD_CONCEPT": "S",
-              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "DOMAIN_ID": "Procedure",
               "INVALID_REASON": "V",
               "INVALID_REASON_CAPTION": "Valid",
-              "CONCEPT_CODE": "5A1D90",
-              "DOMAIN_ID": "Procedure",
-              "VOCABULARY_ID": "ICD10PCS",
-              "CONCEPT_CLASS_ID": "ICD10PCS Hierarchy"
+              "STANDARD_CONCEPT": "S",
+              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "VOCABULARY_ID": "ICD10PCS"
             }
           },
           {
             "concept": {
+              "CONCEPT_CLASS_ID": "ICD10PCS Hierarchy",
+              "CONCEPT_CODE": "5A1D7",
               "CONCEPT_ID": 1536191,
               "CONCEPT_NAME": "Extracorporeal or Systemic Assistance and Performance @ Physiological Systems @ Performance @ Urinary @ Intermittent, Less than 6 Hours Per Day",
-              "STANDARD_CONCEPT": "S",
-              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "DOMAIN_ID": "Procedure",
               "INVALID_REASON": "V",
               "INVALID_REASON_CAPTION": "Valid",
-              "CONCEPT_CODE": "5A1D7",
-              "DOMAIN_ID": "Procedure",
-              "VOCABULARY_ID": "ICD10PCS",
-              "CONCEPT_CLASS_ID": "ICD10PCS Hierarchy"
+              "STANDARD_CONCEPT": "S",
+              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "VOCABULARY_ID": "ICD10PCS"
             }
           },
           {
             "concept": {
+              "CONCEPT_CLASS_ID": "ICD10PCS Hierarchy",
+              "CONCEPT_CODE": "5A1D70",
               "CONCEPT_ID": 1533884,
               "CONCEPT_NAME": "Extracorporeal or Systemic Assistance and Performance @ Physiological Systems @ Performance @ Urinary @ Intermittent, Less than 6 Hours Per Day @ Filtration",
-              "STANDARD_CONCEPT": "S",
-              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "DOMAIN_ID": "Procedure",
               "INVALID_REASON": "V",
               "INVALID_REASON_CAPTION": "Valid",
-              "CONCEPT_CODE": "5A1D70",
-              "DOMAIN_ID": "Procedure",
-              "VOCABULARY_ID": "ICD10PCS",
-              "CONCEPT_CLASS_ID": "ICD10PCS Hierarchy"
+              "STANDARD_CONCEPT": "S",
+              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "VOCABULARY_ID": "ICD10PCS"
             }
           },
           {
             "concept": {
+              "CONCEPT_CLASS_ID": "ICD10PCS Hierarchy",
+              "CONCEPT_CODE": "5A1D8",
               "CONCEPT_ID": 1532622,
               "CONCEPT_NAME": "Extracorporeal or Systemic Assistance and Performance @ Physiological Systems @ Performance @ Urinary @ Prolonged Intermittent, 6-18 hours Per Day",
-              "STANDARD_CONCEPT": "S",
-              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "DOMAIN_ID": "Procedure",
               "INVALID_REASON": "V",
               "INVALID_REASON_CAPTION": "Valid",
-              "CONCEPT_CODE": "5A1D8",
-              "DOMAIN_ID": "Procedure",
-              "VOCABULARY_ID": "ICD10PCS",
-              "CONCEPT_CLASS_ID": "ICD10PCS Hierarchy"
+              "STANDARD_CONCEPT": "S",
+              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "VOCABULARY_ID": "ICD10PCS"
             }
           },
           {
             "concept": {
+              "CONCEPT_CLASS_ID": "ICD10PCS Hierarchy",
+              "CONCEPT_CODE": "5A1D80",
               "CONCEPT_ID": 1532271,
               "CONCEPT_NAME": "Extracorporeal or Systemic Assistance and Performance @ Physiological Systems @ Performance @ Urinary @ Prolonged Intermittent, 6-18 hours Per Day @ Filtration",
-              "STANDARD_CONCEPT": "S",
-              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "DOMAIN_ID": "Procedure",
               "INVALID_REASON": "V",
               "INVALID_REASON_CAPTION": "Valid",
-              "CONCEPT_CODE": "5A1D80",
-              "DOMAIN_ID": "Procedure",
-              "VOCABULARY_ID": "ICD10PCS",
-              "CONCEPT_CLASS_ID": "ICD10PCS Hierarchy"
+              "STANDARD_CONCEPT": "S",
+              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "VOCABULARY_ID": "ICD10PCS"
             }
           },
           {
             "concept": {
+              "CONCEPT_CLASS_ID": "ICD10PCS Hierarchy",
+              "CONCEPT_CODE": "5A22",
               "CONCEPT_ID": 2826308,
               "CONCEPT_NAME": "Extracorporeal or Systemic Assistance and Performance @ Physiological Systems @ Restoration @ Cardiac",
-              "STANDARD_CONCEPT": "S",
-              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "DOMAIN_ID": "Procedure",
               "INVALID_REASON": "V",
               "INVALID_REASON_CAPTION": "Valid",
-              "CONCEPT_CODE": "5A22",
-              "DOMAIN_ID": "Procedure",
-              "VOCABULARY_ID": "ICD10PCS",
-              "CONCEPT_CLASS_ID": "ICD10PCS Hierarchy"
+              "STANDARD_CONCEPT": "S",
+              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "VOCABULARY_ID": "ICD10PCS"
             }
           },
           {
             "concept": {
+              "CONCEPT_CLASS_ID": "ICD10PCS Hierarchy",
+              "CONCEPT_CODE": "5A220",
               "CONCEPT_ID": 2800860,
               "CONCEPT_NAME": "Extracorporeal or Systemic Assistance and Performance @ Physiological Systems @ Restoration @ Cardiac @ Single",
-              "STANDARD_CONCEPT": "S",
-              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "DOMAIN_ID": "Procedure",
               "INVALID_REASON": "V",
               "INVALID_REASON_CAPTION": "Valid",
-              "CONCEPT_CODE": "5A220",
-              "DOMAIN_ID": "Procedure",
-              "VOCABULARY_ID": "ICD10PCS",
-              "CONCEPT_CLASS_ID": "ICD10PCS Hierarchy"
+              "STANDARD_CONCEPT": "S",
+              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "VOCABULARY_ID": "ICD10PCS"
             }
           },
           {
             "concept": {
+              "CONCEPT_CLASS_ID": "ICD10PCS Hierarchy",
+              "CONCEPT_CODE": "5A2204",
               "CONCEPT_ID": 2841649,
               "CONCEPT_NAME": "Extracorporeal or Systemic Assistance and Performance @ Physiological Systems @ Restoration @ Cardiac @ Single @ Rhythm",
-              "STANDARD_CONCEPT": "S",
-              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "DOMAIN_ID": "Procedure",
               "INVALID_REASON": "V",
               "INVALID_REASON_CAPTION": "Valid",
-              "CONCEPT_CODE": "5A2204",
-              "DOMAIN_ID": "Procedure",
-              "VOCABULARY_ID": "ICD10PCS",
-              "CONCEPT_CLASS_ID": "ICD10PCS Hierarchy"
+              "STANDARD_CONCEPT": "S",
+              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "VOCABULARY_ID": "ICD10PCS"
             }
           },
           {
             "concept": {
+              "CONCEPT_CLASS_ID": "ICD10PCS",
+              "CONCEPT_CODE": "5A0",
               "CONCEPT_ID": 2787810,
               "CONCEPT_NAME": "Extracorporeal or Systemic Assistance and Performance, Physiological Systems, Assistance",
-              "STANDARD_CONCEPT": "S",
-              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "DOMAIN_ID": "Procedure",
               "INVALID_REASON": "V",
               "INVALID_REASON_CAPTION": "Valid",
-              "CONCEPT_CODE": "5A0",
-              "DOMAIN_ID": "Procedure",
-              "VOCABULARY_ID": "ICD10PCS",
-              "CONCEPT_CLASS_ID": "ICD10PCS"
+              "STANDARD_CONCEPT": "S",
+              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "VOCABULARY_ID": "ICD10PCS"
             }
           },
           {
             "concept": {
+              "CONCEPT_CLASS_ID": "ICD10PCS",
+              "CONCEPT_CODE": "5A1",
               "CONCEPT_ID": 2788029,
               "CONCEPT_NAME": "Extracorporeal or Systemic Assistance and Performance, Physiological Systems, Performance",
-              "STANDARD_CONCEPT": "S",
-              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "DOMAIN_ID": "Procedure",
               "INVALID_REASON": "V",
               "INVALID_REASON_CAPTION": "Valid",
-              "CONCEPT_CODE": "5A1",
-              "DOMAIN_ID": "Procedure",
-              "VOCABULARY_ID": "ICD10PCS",
-              "CONCEPT_CLASS_ID": "ICD10PCS"
+              "STANDARD_CONCEPT": "S",
+              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "VOCABULARY_ID": "ICD10PCS"
             }
           },
           {
             "concept": {
+              "CONCEPT_CLASS_ID": "ICD10PCS",
+              "CONCEPT_CODE": "5A2",
               "CONCEPT_ID": 2788043,
               "CONCEPT_NAME": "Extracorporeal or Systemic Assistance and Performance, Physiological Systems, Restoration",
-              "STANDARD_CONCEPT": "S",
-              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "DOMAIN_ID": "Procedure",
               "INVALID_REASON": "V",
               "INVALID_REASON_CAPTION": "Valid",
-              "CONCEPT_CODE": "5A2",
-              "DOMAIN_ID": "Procedure",
-              "VOCABULARY_ID": "ICD10PCS",
-              "CONCEPT_CLASS_ID": "ICD10PCS"
+              "STANDARD_CONCEPT": "S",
+              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "VOCABULARY_ID": "ICD10PCS"
             }
           },
           {
             "concept": {
+              "CONCEPT_CLASS_ID": "Procedure",
+              "CONCEPT_CODE": "862791000000106",
               "CONCEPT_ID": 44811012,
               "CONCEPT_NAME": "Fluoroscopy guided percutaneous insertion of cannula for extracorporeal membrane oxygenation",
-              "STANDARD_CONCEPT": "S",
-              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "DOMAIN_ID": "Procedure",
               "INVALID_REASON": "V",
               "INVALID_REASON_CAPTION": "Valid",
-              "CONCEPT_CODE": "862791000000106",
-              "DOMAIN_ID": "Procedure",
-              "VOCABULARY_ID": "SNOMED",
-              "CONCEPT_CLASS_ID": "Procedure"
+              "STANDARD_CONCEPT": "S",
+              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "VOCABULARY_ID": "SNOMED"
             }
           },
           {
             "concept": {
+              "CONCEPT_CLASS_ID": "CPT4",
+              "CONCEPT_CODE": "33988",
               "CONCEPT_ID": 46257400,
               "CONCEPT_NAME": "Insertion of left heart vent by thoracic incision (eg, sternotomy, thoracotomy) for ECMO/ECLS",
-              "STANDARD_CONCEPT": "S",
-              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "DOMAIN_ID": "Procedure",
               "INVALID_REASON": "V",
               "INVALID_REASON_CAPTION": "Valid",
-              "CONCEPT_CODE": "33988",
-              "DOMAIN_ID": "Procedure",
-              "VOCABULARY_ID": "CPT4",
-              "CONCEPT_CLASS_ID": "CPT4"
+              "STANDARD_CONCEPT": "S",
+              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "VOCABULARY_ID": "CPT4"
             }
           },
           {
             "concept": {
+              "CONCEPT_CLASS_ID": "CPT4",
+              "CONCEPT_CODE": "33989",
               "CONCEPT_ID": 46257469,
               "CONCEPT_NAME": "Removal of left heart vent by thoracic incision (eg, sternotomy, thoracotomy) for ECMO/ECLS",
-              "STANDARD_CONCEPT": "S",
-              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "DOMAIN_ID": "Procedure",
               "INVALID_REASON": "V",
               "INVALID_REASON_CAPTION": "Valid",
-              "CONCEPT_CODE": "33989",
-              "DOMAIN_ID": "Procedure",
-              "VOCABULARY_ID": "CPT4",
-              "CONCEPT_CLASS_ID": "CPT4"
+              "STANDARD_CONCEPT": "S",
+              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "VOCABULARY_ID": "CPT4"
             }
           },
           {
             "concept": {
+              "CONCEPT_CLASS_ID": "Procedure",
+              "CONCEPT_CODE": "786451004",
               "CONCEPT_ID": 37206601,
               "CONCEPT_NAME": "Venoarterial extracorporeal membrane oxygenation",
-              "STANDARD_CONCEPT": "S",
-              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "DOMAIN_ID": "Procedure",
               "INVALID_REASON": "V",
               "INVALID_REASON_CAPTION": "Valid",
-              "CONCEPT_CODE": "786451004",
-              "DOMAIN_ID": "Procedure",
-              "VOCABULARY_ID": "SNOMED",
-              "CONCEPT_CLASS_ID": "Procedure"
+              "STANDARD_CONCEPT": "S",
+              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "VOCABULARY_ID": "SNOMED"
             }
           },
           {
             "concept": {
+              "CONCEPT_CLASS_ID": "Procedure",
+              "CONCEPT_CODE": "786453001",
               "CONCEPT_ID": 37206603,
               "CONCEPT_NAME": "Venovenous extracorporeal membrane oxygenation",
-              "STANDARD_CONCEPT": "S",
-              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "DOMAIN_ID": "Procedure",
               "INVALID_REASON": "V",
               "INVALID_REASON_CAPTION": "Valid",
-              "CONCEPT_CODE": "786453001",
-              "DOMAIN_ID": "Procedure",
-              "VOCABULARY_ID": "SNOMED",
-              "CONCEPT_CLASS_ID": "Procedure"
+              "STANDARD_CONCEPT": "S",
+              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "VOCABULARY_ID": "SNOMED"
             }
           }
         ]
       }
     },
     {
-      "id": 17,
-      "name": "[EB] Inpatient or ER visit",
+      "id": 18,
+      "name": "[EB] Inpatient visit",
       "expression": {
         "items": [
           {
             "concept": {
-              "CONCEPT_ID": 9203,
-              "CONCEPT_NAME": "Emergency Room Visit",
-              "STANDARD_CONCEPT": "S",
-              "STANDARD_CONCEPT_CAPTION": "Standard",
-              "INVALID_REASON": "V",
-              "INVALID_REASON_CAPTION": "Valid",
-              "CONCEPT_CODE": "ER",
-              "DOMAIN_ID": "Visit",
-              "VOCABULARY_ID": "Visit",
-              "CONCEPT_CLASS_ID": "Visit"
-            },
-            "includeDescendants": true
-          },
-          {
-            "concept": {
+              "CONCEPT_CLASS_ID": "Visit",
+              "CONCEPT_CODE": "ERIP",
               "CONCEPT_ID": 262,
               "CONCEPT_NAME": "Emergency Room and Inpatient Visit",
-              "STANDARD_CONCEPT": "S",
-              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "DOMAIN_ID": "Visit",
               "INVALID_REASON": "V",
               "INVALID_REASON_CAPTION": "Valid",
-              "CONCEPT_CODE": "ERIP",
-              "DOMAIN_ID": "Visit",
-              "VOCABULARY_ID": "Visit",
-              "CONCEPT_CLASS_ID": "Visit"
+              "STANDARD_CONCEPT": "S",
+              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "VOCABULARY_ID": "Visit"
             },
             "includeDescendants": true
           },
           {
             "concept": {
+              "CONCEPT_CLASS_ID": "Visit",
+              "CONCEPT_CODE": "IP",
               "CONCEPT_ID": 9201,
               "CONCEPT_NAME": "Inpatient Visit",
-              "STANDARD_CONCEPT": "S",
-              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "DOMAIN_ID": "Visit",
               "INVALID_REASON": "V",
               "INVALID_REASON_CAPTION": "Valid",
-              "CONCEPT_CODE": "IP",
-              "DOMAIN_ID": "Visit",
-              "VOCABULARY_ID": "Visit",
-              "CONCEPT_CLASS_ID": "Visit"
+              "STANDARD_CONCEPT": "S",
+              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "VOCABULARY_ID": "Visit"
             },
             "includeDescendants": true
           }
@@ -1420,7 +1405,7 @@
       {
         "Criteria": {
           "VisitOccurrence": {
-            "CodesetId": 17
+            "CodesetId": 18
           }
         },
         "StartWindow": {

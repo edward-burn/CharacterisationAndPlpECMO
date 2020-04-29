@@ -22244,25 +22244,10 @@
       }
     },
     {
-      "id": 14,
-      "name": "[EB] Inpatient or ER visit",
+      "id": 15,
+      "name": "[EB] Inpatient visit",
       "expression": {
         "items": [
-          {
-            "concept": {
-              "CONCEPT_CLASS_ID": "Visit",
-              "CONCEPT_CODE": "ER",
-              "CONCEPT_ID": 9203,
-              "CONCEPT_NAME": "Emergency Room Visit",
-              "DOMAIN_ID": "Visit",
-              "INVALID_REASON": "V",
-              "INVALID_REASON_CAPTION": "Valid",
-              "STANDARD_CONCEPT": "S",
-              "STANDARD_CONCEPT_CAPTION": "Standard",
-              "VOCABULARY_ID": "Visit"
-            },
-            "includeDescendants": true
-          },
           {
             "concept": {
               "CONCEPT_CLASS_ID": "Visit",
@@ -22323,7 +22308,7 @@
       {
         "Criteria": {
           "VisitOccurrence": {
-            "CodesetId": 14
+            "CodesetId": 15
           }
         },
         "StartWindow": {
