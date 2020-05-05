@@ -8,9 +8,9 @@
 # install.packages("dplyr")
 # install.packages("RJSONIO")
 # install.packages("devtools")
-# devtools::install_github("FeatureExtraction")
-# devtools::install_github("ROhdsiWebApi")
-# devtools::install_github("CohortDiagnostics")
+# devtools::install_github("OHDSI/FeatureExtraction")
+# devtools::install_github("OHDSI/ROhdsiWebApi")
+# devtools::install_github("OHDSI/CohortDiagnostics")
 
 
 # Load the package
