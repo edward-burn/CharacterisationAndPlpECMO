@@ -1,31 +1,8 @@
 {
   "ConceptSets": [
     {
-      "id": 6,
-      "name": "[EB 24_03] Limb ischemia",
-      "expression": {
-        "items": [
-          {
-            "concept": {
-              "CONCEPT_ID": 43020443,
-              "CONCEPT_NAME": "Limb ischemia",
-              "STANDARD_CONCEPT": "S",
-              "STANDARD_CONCEPT_CAPTION": "Standard",
-              "INVALID_REASON": "V",
-              "INVALID_REASON_CAPTION": "Valid",
-              "CONCEPT_CODE": "21631000119105",
-              "DOMAIN_ID": "Condition",
-              "VOCABULARY_ID": "SNOMED",
-              "CONCEPT_CLASS_ID": "Clinical Finding"
-            },
-            "includeDescendants": true
-          }
-        ]
-      }
-    },
-    {
       "id": 7,
-      "name": "[EB] Inpatient visit",
+      "name": "[OHDSI Covid19 v1] Inpatient Visit",
       "expression": {
         "items": [
           {
@@ -60,13 +37,81 @@
           }
         ]
       }
+    },
+    {
+      "id": 8,
+      "name": "[EB 24_03] Limb ischemia",
+      "expression": {
+        "items": [
+          {
+            "concept": {
+              "CONCEPT_CLASS_ID": "Clinical Finding",
+              "CONCEPT_CODE": "51274000",
+              "CONCEPT_ID": 315558,
+              "CONCEPT_NAME": "Atherosclerosis of arteries of the extremities",
+              "DOMAIN_ID": "Condition",
+              "INVALID_REASON": "V",
+              "INVALID_REASON_CAPTION": "Valid",
+              "STANDARD_CONCEPT": "S",
+              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "VOCABULARY_ID": "SNOMED"
+            },
+            "includeDescendants": true
+          },
+          {
+            "concept": {
+              "CONCEPT_CLASS_ID": "Clinical Finding",
+              "CONCEPT_CODE": "372070002",
+              "CONCEPT_ID": 439928,
+              "CONCEPT_NAME": "Gangrenous disorder",
+              "DOMAIN_ID": "Condition",
+              "INVALID_REASON": "V",
+              "INVALID_REASON_CAPTION": "Valid",
+              "STANDARD_CONCEPT": "S",
+              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "VOCABULARY_ID": "SNOMED"
+            },
+            "includeDescendants": true
+          },
+          {
+            "concept": {
+              "CONCEPT_CLASS_ID": "Clinical Finding",
+              "CONCEPT_CODE": "21631000119105",
+              "CONCEPT_ID": 43020443,
+              "CONCEPT_NAME": "Limb ischemia",
+              "DOMAIN_ID": "Condition",
+              "INVALID_REASON": "V",
+              "INVALID_REASON_CAPTION": "Valid",
+              "STANDARD_CONCEPT": "S",
+              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "VOCABULARY_ID": "SNOMED"
+            },
+            "includeDescendants": true
+          },
+          {
+            "concept": {
+              "CONCEPT_CLASS_ID": "Clinical Finding",
+              "CONCEPT_CODE": "90958004",
+              "CONCEPT_ID": 4236905,
+              "CONCEPT_NAME": "Thrombosis of arteries of lower extremity",
+              "DOMAIN_ID": "Condition",
+              "INVALID_REASON": "V",
+              "INVALID_REASON_CAPTION": "Valid",
+              "STANDARD_CONCEPT": "S",
+              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "VOCABULARY_ID": "SNOMED"
+            },
+            "includeDescendants": true
+          }
+        ]
+      }
     }
   ],
   "PrimaryCriteria": {
     "CriteriaList": [
       {
         "ConditionOccurrence": {
-          "CodesetId": 6
+          "CodesetId": 8
         }
       }
     ],
